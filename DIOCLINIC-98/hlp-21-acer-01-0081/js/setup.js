@@ -29,6 +29,87 @@ $('a[href^="#"]').click(function(e) {
 });
 
 //slick
+$('#voice_slider').slick({
+  autoplay: true, //自動でスクロール
+  autoplaySpeed: 2000,
+  infinite: true,
+  speed: 300, //スライドが流れる速度を設定
+  dots: true,
+  slidesToShow: 1, //表示するスライドの数
+  prevArrow: $('.voice-slick-prev'),
+  nextArrow: $('.voice-slick-next')
+});
+$('#approach01_slider').slick({
+  autoplay: true, //自動でスクロール
+  autoplaySpeed: 2000,
+  infinite: true,
+  speed: 300, //スライドが流れる速度を設定
+  dots: false,
+  slidesToShow: 1, //表示するスライドの数
+  prevArrow: $('.approach01-slick-prev'),
+  nextArrow: $('.approach01-slick-next')
+});
+$('#approach02_slider').slick({
+  autoplay: true, //自動でスクロール
+  autoplaySpeed: 2000,
+  infinite: true,
+  speed: 300, //スライドが流れる速度を設定
+  dots: false,
+  slidesToShow: 1, //表示するスライドの数
+  prevArrow: $('.approach02-slick-prev'),
+  nextArrow: $('.approach02-slick-next')
+});
+$('#approach03_slider').slick({
+  autoplay: true, //自動でスクロール
+  autoplaySpeed: 2000,
+  infinite: true,
+  speed: 300, //スライドが流れる速度を設定
+  dots: false,
+  slidesToShow: 1, //表示するスライドの数
+  prevArrow: $('.approach03-slick-prev'),
+  nextArrow: $('.approach03-slick-next')
+});
+$('#approach04_slider').slick({
+  autoplay: true, //自動でスクロール
+  autoplaySpeed: 2000,
+  infinite: true,
+  speed: 300, //スライドが流れる速度を設定
+  dots: false,
+  slidesToShow: 1, //表示するスライドの数
+  prevArrow: $('.approach04-slick-prev'),
+  nextArrow: $('.approach04-slick-next')
+});
+$('#approach04_1_slider').slick({
+  autoplay: true, //自動でスクロール
+  autoplaySpeed: 2000,
+  infinite: true,
+  speed: 300, //スライドが流れる速度を設定
+  dots: false,
+  slidesToShow: 1, //表示するスライドの数
+  prevArrow: $('.approach04_1-slick-prev'),
+  nextArrow: $('.approach04_1-slick-next')
+});
+$('#approach05_slider').slick({
+  autoplay: true, //自動でスクロール
+  autoplaySpeed: 2000,
+  infinite: true,
+  speed: 300, //スライドが流れる速度を設定
+  dots: false,
+  slidesToShow: 1, //表示するスライドの数
+  prevArrow: $('.approach05-slick-prev'),
+  nextArrow: $('.approach05-slick-next')
+});
+$('#program_slider').slick({
+  autoplay: true, //自動でスクロール
+  autoplaySpeed: 2000,
+  infinite: true,
+  speed: 300, //スライドが流れる速度を設定
+  dots: false,
+  slidesToShow: 1, //表示するスライドの数
+  prevArrow: $('.program-slick-prev'),
+  nextArrow: $('.program-slick-next')
+});
+
 $('.campaignSlider').slick({
   autoplay: false, //自動でスクロール
   autoplaySpeed: 2000,
@@ -38,65 +119,6 @@ $('.campaignSlider').slick({
   slidesToShow: 1, //表示するスライドの数
   prevArrow: $('.slick-prev'),
   nextArrow: $('.slick-next')
-});
-
-$('#voice_slider').slick({
-  autoplay: true, //自動でスクロール
-  infinite: true,
-  speed: 300, //スライドが流れる速度を設定
-  slidesToShow: 1, //表示するスライドの数
-  dots: true, //スライドしたのドット
-  centerMode: true,
-  variableWidth: true,
-});
-$('#approach01_slider').slick({
-  autoplay: true, //自動でスクロール
-  infinite: true,
-  speed: 300, //スライドが流れる速度を設定
-  slidesToShow: 1, //表示するスライドの数
-  centerMode: true,
-  variableWidth: true,
-});
-$('#approach02_slider').slick({
-  autoplay: true, //自動でスクロール
-  infinite: true,
-  speed: 300, //スライドが流れる速度を設定
-  slidesToShow: 1, //表示するスライドの数
-  centerMode: true,
-  variableWidth: true,
-});
-$('#approach03_slider').slick({
-  autoplay: true, //自動でスクロール
-  infinite: true,
-  speed: 300, //スライドが流れる速度を設定
-  slidesToShow: 1, //表示するスライドの数
-  centerMode: true,
-  variableWidth: true,
-});
-$('#approach04_slider').slick({
-  autoplay: true, //自動でスクロール
-  infinite: true,
-  speed: 300, //スライドが流れる速度を設定
-  slidesToShow: 1, //表示するスライドの数
-  centerMode: true,
-  variableWidth: true,
-});
-$('#approach05_slider').slick({
-  autoplay: true, //自動でスクロール
-  infinite: true,
-  speed: 300, //スライドが流れる速度を設定
-  slidesToShow: 1, //表示するスライドの数
-  centerMode: true,
-  variableWidth: true,
-});
-$('#program_slider').slick({
-  autoplay: true, //自動でスクロール
-  autoplaySpeed: 2000,
-  infinite: true,
-  speed: 300, //スライドが流れる速度を設定
-  slidesToShow: 1, //表示するスライドの数
-  centerMode: true,
-  variableWidth: true,
 });
 
 //アコーディオンをクリックした時の動作

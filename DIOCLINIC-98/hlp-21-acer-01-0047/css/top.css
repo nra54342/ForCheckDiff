@@ -153,10 +153,14 @@
 #voice_slider .slick-prev {
   background: url(../img/voice/next.webp) no-repeat;
   background-size: 6.2rem;
+  position: absolute;
+  left: -2.5rem;
 }
 #voice_slider .slick-next {
   background: url(../img/voice/prev.webp) no-repeat;
   background-size: 6.2rem;
+  position: absolute;
+  right: -2.5rem;
 }
 /* slick_dots */
 .slick-dots {
