@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+/*----- common -----*/
+html {font-size: 62.5%;}
+body {
+  font-family: "游ゴシック", "游ゴシック体", YuGothic, "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-feature-settings: "palt";
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: 1.6;
+  color: #000000;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overscroll-behavior-y: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: unset;
+  background: #ebeff3;
+  padding-bottom: 18.3rem;
+}
+.serif {font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;}
+.sans {font-family: "游ゴシック", "游ゴシック体", YuGothic, "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;}
+.db, .pc {display: block;}
+.dn, .sp {display: none;}
+.tac {text-align: center;}
+.tar {text-align: right;}
+.relative {position: relative;}
+.absolute {position: absolute;}
+.z1 {z-index: 1;}
+.abc {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+
+/*---------- upper -----------*/
+#container {
+  max-width: 75rem;
+  margin: 0 auto;
+  background: #FFF;
+  box-shadow: 0 0 15px #1c446c30;
+  overflow: hidden;
+}
+.box {
+  position: relative;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.m_box {
+  position: relative;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+
+/*----- column -----*/
+.flex {display: flex;}
+.sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.jcc {justify-content: center;}
+.aic {align-items: center;}
+.afe {align-items: flex-end;}
+
+/*---------- width -----------*/
+.wfit {width: fit-content;}
+.w690 {width: 69rem;}
+.w710 {width: 71rem;}
+.w750 {width: 75rem;}
+
+
+/*---------- margin,padding -----------*/
+.mb5 {margin-bottom: 0.5rem;}
+.mb10 {margin-bottom: 1rem;}
+.mb15 {margin-bottom: 1.5rem;}
+.mb20 {margin-bottom: 2rem;}
+.mb25 {margin-bottom: 2.5rem;}
+.mb30 {margin-bottom: 3rem;}
+.mb35 {margin-bottom: 3.5rem;}
+.mb40 {margin-bottom: 4rem;}
+.mb45 {margin-bottom: 4.5rem;}
+.mb50 {margin-bottom: 5rem;}
+.mb60 {margin-bottom: 6rem;}
+.mb75 {margin-bottom: 7.5rem;}
+.mb90 {margin-bottom: 9rem;}
+
+.ml30 {margin-left: 3rem;}
+.ml60 {margin-left: 6rem;}
+
+.mr30 {margin-right: 3rem;}
+.mr60 {margin-right: 6rem;}
+
+.pb15 {padding-bottom: 1.5rem;}
+.pb30 {padding-bottom: 3rem;}
+.pb45 {padding-bottom: 4.5rem;}
+.pb60 {padding-bottom: 6rem;}
+.pb90 {padding-bottom: 9rem;}
+
+.pt10 {padding-top: 1rem;}
+.pt15 {padding-top: 1.5rem;}
+.pt30 {padding-top: 3.0rem;}
+.pt45 {padding-top: 4.5rem;}
+.pt60 {padding-top: 6rem;}
+.pt70 {padding-top: 7rem;}
+.pt90 {padding-top: 9rem;}
+
+
+/*----- img -----*/
+.c_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.r_img {
+  display:block;
+  margin-left: auto;
+}
+.img_h {
+  transition: 0.3s;
+}
+.img_h:hover {
+  opacity: 0.8;
+}
+
+/*----- color -----*/
+.white {color: #ffffff;}
+
+
+/*----- text -----*/
+.r_txt {margin: 0 0 0 auto;}
+.notes {
+  font-size: 1.8rem;
+}
+.fs14 {font-size: 1.4rem;}
+.fs20 {font-size: 2rem;}
+.fs22 {font-size: 2.2rem;}
+.fs24 {font-size: 2.4rem;}
+.fs25 {font-size: 2.5rem;}
+.fs26 {font-size: 2.6rem;}
+.fs28 {font-size: 2.8rem;}
+.fs30 {font-size: 3rem;}
+.fs32 {font-size: 3.2rem;}
+.fs34 {font-size: 3.4rem;}
+.fs36 {font-size: 3.6rem;}
+
+.italic {font-style: italic;}
+.bold {font-weight: bold;}
+
+.lh08 {line-height: 0.8;}
+.lh1 {line-height: 1;}
+.lh11 {line-height: 1.1;}
+.lh12 {line-height: 1.2;}
+.lh13 {line-height: 1.3;}
+.lh14 {line-height: 1.4;}
+.lh15 {line-height: 1.5;}
+.lh16 {line-height: 1.6;}
+.lh17 {line-height: 1.7;}
+.lh18 {line-height: 1.8;}
+
+/* 以下slider */
+.slider {
+  opacity: 0;
+  transition: 3s;
+}
+.slick-initialized{
+  opacity: 1
+}
+.slick-slide {
+  cursor: grab;
+}
+/* slick_arrow */
+.slick-arrow {
+  display: block;
+  border: none;
+  font-size: 0;
+  position: absolute;
+  z-index: 100;
+  top: calc(50% - 3rem);
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.slick-arrow:hover {
+  opacity: 0.8;
+}
+.slick-prev {
+  left: -2rem;
+}
+.slick-next {
+  right: -2rem;
+}
+
+/* 矢印 */
+.arw {
+  animation: arw 0.7s ease-in infinite alternate;
+}
+@keyframes arw{
+  0% {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
+}
+
+/* 点滅 */
+.caution {
+  animation: blink 0.7s ease-out infinite alternate;
+}
+@keyframes blink{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@media screen and (max-width:749px) {
+  html {
+    font-size: 1.33333vw
+  }
+  body {background: #fff;}
+  .pc {display: none;}
+  .sp {display: block;}
+}
