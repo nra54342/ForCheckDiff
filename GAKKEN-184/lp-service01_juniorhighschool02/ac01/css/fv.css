@@ -1,0 +1,210 @@
+@charset "utf-8";
+/*----- header -----*/
+#header {
+  position: fixed;
+  width: 75rem;
+  z-index: 101;
+  top: 0;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+
+.headerContent {
+  padding: 1.4rem 0;
+  background: #FFF;
+  -webkit-box-shadow: 0px 0.3rem 0.6rem 0px rgba(63,2,2,0.15);
+  -moz-box-shadow: 0px 0.3rem 0.6rem 0px rgba(63,2,2,0.15);
+  box-shadow: 0px 0.3rem 0.6rem 0px rgba(63,2,2,0.15);
+}
+#h_logo {width:20rem;}
+#h_tel {width:19.3rem;}
+#h_btn {width:28.4rem;}
+
+/*----- mi -----*/
+.fv{
+  position: relative;
+}
+
+.fvBg{
+  width: 75rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.fvTxt01{
+  position: absolute;
+  width: 75rem;
+  display: block;
+  top: 1rem;
+}
+
+.fvTxt02{
+  position: absolute;
+  width: 61rem;
+  display: block;
+  top: 37.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fvTxt03{
+  position: absolute;
+  bottom: 11rem;
+}
+
+.fvTxt03 p{
+  text-align: center;
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+underLine{
+  border-bottom: .2rem solid #ffffff;
+}
+
+.fvNote{
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #666666;
+  padding: 1.5rem 4rem;
+}
+/*----- banner -----*/
+#banner .box {
+  padding: 1rem 0 2rem 0;
+}
+.banner_area {
+  padding: 0 2rem;
+  width: 70rem;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.banner_area ul li p {
+  white-space: nowrap;
+}
+
+.banner_area ul li h3 {
+  padding: 0.4rem 0 0 3.2rem;
+  box-sizing: border-box;
+  max-width: 40.8rem;
+}
+
+
+.banner_area .white_bg {
+  padding: 5rem 0.5rem 0.5rem 2.5rem;
+  box-sizing: border-box;
+}
+
+.banner_date {
+  width: 12rem;
+  height: 11.8rem;
+  padding: 4rem 0 0 0;
+  position: absolute;
+  top: 12.2rem;
+  left: 2rem;
+  line-height: 0.8;
+}
+
+.banner_date.first {
+  top: 12.8rem;
+}
+
+/*----- coversion -----*/
+#conversion {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+/*----- lead -----*/
+.lead_img {
+  width: 58.3rem;
+  position: absolute;
+  top: -4.6rem;
+  left: 0;
+  right: 0;
+}
+.btn_box {
+  padding: 0;
+  width: 72.4rem;
+  height: 13rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 6rem;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 13rem;
+  border-radius: 6rem;
+  margin-left: -0.7rem;
+}
+.btn_box02 {
+  background: url(../img/common/btn02.svg) no-repeat center center;
+  background-size: 100% 100%;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(68, 3, 3, 0.2);
+  width: 65rem;
+  height: 11.6rem;
+  line-height: 12rem;
+}
+
+.btn_box03 {
+    width: 65rem;
+    height: 11.6rem;
+    line-height: 12rem;
+    background: url(../img/common/btn03.svg) no-repeat center center;
+    background-size: cover;
+}
+
+.btn_box::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: -18rem;
+  left: 0;
+  width: 3rem;
+  height: 100%;
+  background-color: #ffffff;
+  animation: shiny-btn 3s ease-in-out infinite;
+}
+.btn_box:hover::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff26;
+  animation: none;
+}
+@keyframes shiny-btn {
+  0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+  80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+  81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+  100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+.lead_notes {
+  background: #ffffff;
+  /* border: 1px solid #199342; */
+  padding: 1.2rem 2.4rem;
+  position: relative;
+  width: 59rem;
+  left: 2rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 0px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0.5rem 0.5rem 0px 0px rgba(0,0,0,0.15);
+  box-shadow: 0.5rem 0.5rem 0px 0px rgba(0,0,0,0.15);
+  border: 0.1rem solid #7F5336;
+}
+.lead_notes img {
+  width: 18rem;
+  position: absolute;
+  top: -1rem;
+  right: -7rem;
+  transform: rotate(4deg);
+  -webkit-box-shadow: 0.5rem 0.5rem 0px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0.5rem 0.5rem 0px 0px rgba(0,0,0,0.15);
+  box-shadow: 0.5rem 0.5rem 0px 0px rgba(0,0,0,0.15);
+}

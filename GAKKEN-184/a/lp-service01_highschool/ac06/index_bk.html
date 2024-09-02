@@ -1,0 +1,574 @@
+<?php
+include __DIR__.'/index.php';
+?><!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NH6KGWC');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/common/favicon.ico">
+  <title>学研の家庭教師</title>
+  <!-- Style -->
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/fv.css">
+  <link rel="preload" href="css/top.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="css/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="css/form.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <script type="text/javascript" src="https://js.crossees.com/csslp.js" async></script>
+
+<!-- <?php
+/*
+<link rel="stylesheet" href="/entry/validationEngine.jquery.css">
+*/
+?> -->
+<style type="text/css">
+.error_field{background-color:#ffdede;}
+.error_text{color:red;}
+</style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH6KGWC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div id="container">
+    <div id="header">
+      <div class="box">
+        <ul class="sec aic">
+          <li><h1><a href="./"><img id="h_logo" class="h_img" src="img/header/logo.svg" alt="学研の家庭教師"></a></h1></li>
+          <li><a href="tel:0120351056"><img id="h_tel" class="h_img" src="img/header/tel.svg" alt="0120-351-056"></a></li>
+          <li class="pc"><a href="#form"><img id="h_btn" class="h_img" src="img/header/btn.svg"></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section>
+      <h2><img src="img/mi/bg.webp"></h2>
+    </section>
+
+    <section id="banner" class="blue_bg">
+      <div class="box">
+        <a href="#form">
+        <!-- banner_slider -->
+        <div id="banner_box">
+          <div class="banner_area">
+            <div class="relative">
+              <img src="img/banner/img03.webp?date=20220525" alt="">
+              <!-- <p class="banner_date fs32 bold tac white">4<span class="fs20">/</span>30<br><span class="fs26">まで</span></p> -->
+            </div>
+          </div><!-- ba_area -->
+          <div class="banner_area">
+            <img src="img/banner/img01.webp?date=20220525" alt="">
+          </div><!-- ba_area -->
+        </div>
+      </a>
+      </div>
+    </section>
+    <section class="yellow_bg">
+      <div class="m_box pt30 pb45">
+        <h2><img class="w320 c_img mb20" src="img/lead/ttl.svg" alt="資料請求までわずか1分!"></h2>
+        <img class="lead_img c_img" src="img/lead/img.svg" alt="">
+        <a class="btn_box h_btn mb30" href="#form"><img class="lead_btn c_img" src="img/lead/btn.svg"></a>
+        <p class="lead_notes fs22 bold"><mark class="fs26 pink">オンラインでの指導</mark>も行っているため<br>いつでもどこでも指導を受けることができます。<img src="img/lead/img02.webp" alt=""></p>
+      </div>
+    </section>
+
+    <div id="conversion" class="dnone">
+      <div class="box">
+        <a class="btn_box h_img" href="#form"><img class="lead_btn c_img" src="img/lead/btn.svg"></a>
+      </div>
+    </div>
+
+    <section>
+      <div class="m_box ptb60">
+        <h2 class="ttl fs42 blue tac mb30">大学受験の合格実績</h2>
+        <div class="pink_box yellow_bg br15 p15 fs28 blue bold relative tac mb30">
+          <span class="pink_txt plr20">学研の家庭教師だからこの実績<i>!</i></span><br>有名大学・難関大学への合格者続出<i>!</i>
+          <img id="achievement_img01" src="img/achievement/img01.svg">
+        </div>
+        <ul class="green_box p30 br15 sec mb30">
+          <li><img class="achievement_img" src="img/achievement/img02.svg" loading="lazy"></li>
+          <li class="w400">
+            <h3 class="achievement_ttl fs28 white mb20">難関国立大学合格実績</h3>
+            <p class="fs22">東京大学/京都大学/大阪大学/神戸大学/北海道大学/東北大学/名古屋大学/九州大学/東京工業大学/一橋大学/東京外国語大学/東京学芸大学/その他 国立大学医師薬学部 など多数</p>
+          </li>
+        </ul>
+        <ul class="green_box p30 br15 sec mb10">
+          <li><img class="achievement_img" src="img/achievement/img03.svg" loading="lazy"></li>
+          <li class="w400">
+            <h3 class="achievement_ttl fs28 white mb20">難関私立大学合格実績</h3>
+            <p class="fs22">慶應義塾大学/早稲田大学/上智大学/東京理科大学/学習院大学/明治大学/青山学院大学/立教大学/中央大学/法政大学/国際基督教大学/関西学院大学/関西大学/同志社大学/立命館大学 など多数</p>
+          </li>
+        </ul>
+        <p class="fs16 tar">※当社調べ</p>
+      </div>
+    </section>
+
+    <section id="compare" class="yellow_bg">
+      <div class="box ptb60">
+        <h2><img class="mb105" src="img/compare/img01.svg" alt="学研の家庭教師ならこんなに違う!" loading="lazy"></h2>
+        <ul id="compare_box" class="sec">
+          <li class="w230 white_bg br15 relative">
+            <img class="compare_num c_img" src="img/compare/img02.svg" alt="" loading="lazy">
+            <h3 class="pink mb20">学研のココが凄い<i>!</i></h3>
+            <p class="fs20">学研独自のメソッドで、皆さん一人ひとりの学習状況や習熟度に応じて、<span class="green_txt plr5">完全オーダーメイドでカリキュラムを作成</span>します！</p>
+          </li>
+          <li class="w230 white_bg br15 relative">
+            <img class="compare_num c_img" src="img/compare/img03.svg" alt="" loading="lazy">
+            <h3 class="pink mb20">学研のココが凄い<i>!</i></h3>
+            <p class="fs20">学校や部活で忙しい高校生でも<span class="green_txt plr5">柔軟なスケジュールで対応</span>します！テスト前や長期休暇中に集中的に受講することも可能です！</p>
+          </li>
+          <li class="w230 white_bg br15 relative">
+            <img class="compare_num c_img" src="img/compare/img04.svg" alt="" loading="lazy">
+            <h3 class="pink mb20">学研のココが凄い<i>!</i></h3>
+            <p class="fs20">学研では、対面指導とオンライン指導の<span class="green_txt plr5">ハイブリット学習も可能</span>です。自宅学習のため、新型コロナ感染症の心配もありません！</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="issue">
+      <div class="box pt60">
+        <h2 class="fs42 blue tac mb45"><span class="pink_txt plr20">高校生のみなさん、</span><br>こんなことで悩んでいませんか？</h2>
+        <!-- issue_slider -->
+        <div id="issue_box">
+          <div class="issue_area">
+            <img class="issue_img" src="img/issue/img01.svg" alt="">
+            <p class="bold blue pt20 tac relative">塾に通ってるけど<br><span class="green_txt plr5">結果が出ない</span></p>
+          </div><!-- issue_area -->
+          <div class="issue_area">
+            <img class="issue_img" src="img/issue/img02.svg" alt="">
+            <p class="bold blue pt20 tac relative">授業の内容に<br><span class="green_txt plr5">ついていけない</span></p>
+          </div><!-- issue_area -->
+          <div class="issue_area">
+            <img class="issue_img" src="img/issue/img03.svg" alt="">
+            <p class="bold blue pt20 tac relative">第一志望の<br><span class="green_txt plr5">合格圏に届かない</span></p>
+          </div><!-- issue_area -->
+          <div class="issue_area">
+            <img class="issue_img" src="img/issue/img04.svg" alt="">
+            <p class="bold blue pt20 tac relative">部活と<br><span class="green_txt plr5">勉強を両立したい</span></p>
+          </div><!-- issue_area -->
+        </div>
+        <img id="issue_arw" class="c_img" src="img/issue/arw.svg" alt="">
+      </div>
+      <div class="box ptb60">
+        <h2 class="fs42 pink tac mb10">学研の家庭教師に<br>すべておまかせください!</h2>
+        <div class="w440 c_img green_bg br15 p20 tac">
+          <h3 class="fs32 green">家庭教師で選ぶなら、学研<i>!</i></h3>
+          <p>「学研にしてよかった<i>!</i>」という声、<br>おかげさまで、いま、増えています。</p>
+        </div>
+        <img id="issue_img05" class="c_img" src="img/issue/img05.svg" alt="">
+        <img src="img/common/arw.svg" alt="">
+      </div>
+    </section>
+
+    <section id="strong">
+      <div class="box">
+        <h2 class="fs42 blue tac mb45">悩みを解決する<br><span class="pink_txt plr20">学研の家庭教師の5つの強み</span></h2>
+        <p class="bold tac mb120">家庭教師なんてどこも同じなんて思っていませんか?<br>いえいえ、学研だからこそできる強みがあります。</p>
+
+        <div class="blue_box br15 p30 pt45 mb105 relative">
+          <img class="strong_ttl c_img" src="img/strong/ttl01.svg" alt="">
+          <h3 class="fs28 lh12 blue tac mb15">どこよりも厳選された<br><span class="fs46 pink">自慢の家庭教師陣</span></h3>
+          <img class="c_img mb15" src="img/strong/img01.webp" alt="">
+          <p>適性検査や面接などで「指導力・人物ともに合格」と判断された8％の人材のみを採用しています。<span class="green_txt fs26">お子様をしっかりと受け持つ責任感が強い自慢の講師陣です。</span></p>
+        </div>
+        <div class="blue_box br15 p30 pt45 mb105 relative">
+          <img class="strong_ttl strong_ttl02 c_img" src="img/strong/ttl02.svg" alt="">
+          <h3 class="fs28 lh12 blue tac mb15">どこよりも満足度が高い<br><span class="fs46 pink">満足度98%のマッチング</span></h3>
+          <img class="c_img mb15" src="img/strong/img02.webp" alt="">
+          <p>学研の家庭教師は、全国規模ならではの安心感とスケールメリットが強み。「ただ家庭教師を紹介する」ではなく、一緒に目標に向かって頑張っていける先生、尊敬しながらも安心できる先生をマッチング。<br><br><span class="green_txt fs26">その結果、「家庭」「講師」の双方から好評を得ており、<br>98%の会員様に満足していただけています。</span></p>
+        </div>
+        <div class="blue_box br15 mb105 relative">
+          <div class="p30 pt45">
+            <img class="strong_ttl c_img" src="img/strong/ttl03.svg" alt="">
+            <h3 class="fs28 lh12 blue tac mb15">どこよりも合格に直結した<br><span class="fs46 pink">オーダーメイドカリキュラム</span></h3>
+            <img class="c_img mb15" src="img/strong/img03.webp" alt="">
+            <p><span class="green_txt fs26">受験校合格や成績向上を目標にした、一人ひとりに合った効率的な学習カリキュラムを作成。</span><br><br>「学研の家庭教師」は70年を超える歴史の学研グループの中で1983年に創業した業界のパイオニア。これまで10万人を超える指導実績があります。</p>
+          </div>
+          <div class="blue_bg plr30 pt45 pb15 relative">
+            <img id="strong_img03b" src="img/strong/img03b.svg" alt="">
+            <h4 class="blue_ttl fs28 lh1 bold yellow ptb30 relative tac mb15">一人ひとりの学習状況や習熟度に応じて、作成します<i>!</i><br><span class="fs18 normal white">※講師によって作成方法が異なる場合があります。</span></h4>
+            <div class="p30">
+              <h5 class="strong03_ttl blue mb10">難関私立大学志望の生徒様の例</h5>
+              <img class="mb30" src="img/strong/img03c.svg" alt="">
+              <h5 class="strong03_ttl blue mb10">国公立大学志望の生徒様の例</h5>
+              <img src="img/strong/img03d.svg" alt="">
+            </div>
+          </div>
+          <div class="relative pt60 pb15">
+            <img id="strong_img03e" src="img/strong/img03e.svg" alt="">
+            <h4 class="blue_ttl fs28 lh1 bold yellow ptb30 relative tac mb15">柔軟なスケジュールで対応し、部活との両立も可能<i>!</i></h4>
+            <div class="p30">
+              <img src="img/strong/img03f.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="blue_box br15 p30 pt45 mb105 relative">
+          <img class="strong_ttl c_img" src="img/strong/ttl04.svg" alt="">
+          <h3 class="fs28 lh12 blue tac mb15">どこよりも徹底した<br><span class="fs46 pink">進捗管理、成果主義</span></h3>
+          <img class="c_img mb15" src="img/strong/img04.webp" alt="">
+          <p><span class="green_txt fs26">目標達成までの学習管理を綿密に行うことで、一人ひとりの学力をしっかりと向上!</span><br><br>専任の教務スタッフが、お子様の理解度、テストの結果などを分析し、生徒さんにピッタリ合った学習カリキュラムを随時見直します。</p>
+        </div>
+        <div class="blue_box br15 p30 pt45 mb105 relative">
+          <img class="strong_ttl strong_ttl02 c_img" src="img/strong/ttl05.svg" alt="">
+          <h3 class="fs28 lh12 blue tac mb15">どこよりも差がつく<br><span class="fs46 pink">学習指導</span></h3>
+          <img class="c_img mb15" src="img/strong/img05.webp" alt="">
+          <p>内的動機づけを促す指導で、「自分でできる」が「自分はできる」に変わっていき、自己肯定感を培っていきます。<br><br><span class="green_txt fs26">その結果、「勉強が楽しい!」「いつの間にか成績が伸びていた」という、学研ならではの体験をしていただいています。</span></p>
+        </div>
+      </div>
+      <div class="box pb30">
+        <h2 class="fs42 blue tac mb10">だから、学研の家庭教師は<br><span class="pink_txt plr20">どこよりも差がつく<i>!</i></span></h2>
+        <div class="w520 c_img green_bg br15 p20 tac">
+          <h3 class="fs32 green">さあ、次はあなたも<i>!</i></h3>
+          <p>まずは、資料請求からはじめてみませんか?<br>早く始めれば始めるほど、大きく差は開きます。</p>
+        </div>
+        <img class="strong_img06" class="c_img" src="img/strong/img06.svg" alt="">
+        <img src="img/common/arw.svg" alt="">
+      </div>
+    </section>
+
+    <section>
+      <div class="box pb45">
+        <h2><img class="banner_ttl c_img mb15" src="img/banner/ttl.svg?date=20220525" alt=""></h2>
+        <div class="relative">
+          <img src="img/banner/img03.webp?date=20220525" alt="">
+          <!-- <p class="banner_date fs32 bold tac white">4<span class="fs20">/</span>30<br><span class="fs26">まで</span></p> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="yellow_bg">
+      <div class="m_box pt30 pb45">
+        <h2><img class="w320 c_img mb20" src="img/lead/ttl.svg" alt="資料請求までわずか1分!"></h2>
+        <img class="lead_img c_img" src="img/lead/img.svg" alt="">
+        <a class="btn_box h_btn mb30" href="#form"><img class="lead_btn c_img" src="img/lead/btn.svg"></a>
+        <p class="lead_notes fs22 bold"><mark class="fs26 pink">オンラインでの指導</mark>も行っているため<br>いつでもどこでも指導を受けることができます。<img src="img/lead/img02.webp" alt=""></p>
+      </div>
+    </section>
+
+    <section id="voice">
+      <div class="box ptb60">
+        <h2 class="ttl fs42 blue tac mb30">「学研の家庭教師」合格者の声</h2>
+        <div class="relative">
+          <img class="c_img" src="img/voice/img01.webp" alt="">
+          <div class="voice_ttl">
+            <h3 class="fs28 white mb10">一橋大学経済学部合格 M<span class="fs20">さん</span></h3>
+            <dl class="fs20 flex">
+              <dt>開始時期：</dt>
+              <dd>高2 8月　所属部活：水泳部</dd>
+            </dl>
+            <dl class="fs20 flex">
+              <dt>その他合格：</dt>
+              <dd>慶應義塾大学経済学部/青山学院大学経済学部</dd>
+            </dl>
+          </div>
+          <div class="relative p30">
+            <p id="voice_txt01" class="voice_txt blue_bg br15 p30">1つ目は、周りの方々と様々な話・情報共有をしたことです。周りの方々との会話は、自分のレベルを引き上げてくれます。また知らなかったことを知るチャンスにもなります。<br><br>家庭教師の方や、学校の友人、先輩などに沢山勉強の相談をしたことで、自分の勉強に対する考え方、計画の仕方などを学ぶことができました。特に家庭教師による個別指導があったことで、困ったことがあったときにすぐに悩みを打ち明けることができました。<br><br>2つ目は、英語の実力の早期完成です。高1の時からコツコツ単語や文法をメインに勉強してきた結果、早い時期に英語の力を固めることができました。単語や文法の力がしっかりしていれば、長文に確実に応用できるのではないかと思います。</p>
+            <img id="voice_btn01" class="voice_btn c_img h_img" src="img/voice/btn.svg" alt="">
+            <div id="fadeout01" class="fadeout"></div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img class="c_img" src="img/voice/img02.webp" alt="">
+          <div class="voice_ttl">
+            <h3 class="fs28 white mb10">早稲田大学商学部合格 A<span class="fs20">くん</span></h3>
+            <dl class="fs20 flex">
+              <dt>開始時期：</dt>
+              <dd>高2 4月　所属部活：サッカー部</dd>
+            </dl>
+            <dl class="fs20 flex">
+              <dt>その他合格：</dt>
+              <dd>明治大学商学部/青山学院大学経営学部/法政大学経営学部</dd>
+            </dl>
+          </div>
+          <div class="relative p30">
+            <p id="voice_txt02" class="voice_txt blue_bg br15 p30">私は高校2年生の春にテストの結果をみて、このままだと志望校に受からないと思い、学研の家庭教師の体験授業をしました。高校3年生には文化祭の幹部で忙しい時期が続きましたが、マンツーマンで柔軟な指導スケジュールで自宅学習ができるため質問がしやすくわからないところはすぐに解消出来ました。<br><br>勉強の成績が思うように伸びない時期もあり、不安になった時期もありましたが、家庭教師のSさんの優しいアドバイスのおかげで、そのスランプも乗り越えることができました。伸び悩む時期もありましたが、○○さんのアドバイスで基礎基本の部分がボロボロだったことに気づき、古文単語や英熟語などの基礎基本を1からやり直し、日本史の部分では、苦手な分野を2週も3週も繰り返しました。<br><br>また、過去問を本格的に始めてからは、ピンポイントで的確な指導をしていただいたことで、できなかった部分が浮き彫りにすることができ、そのような部分を重点的に無駄なく対策たことで、克服をすることができました。</p>
+            <img id="voice_btn02" class="voice_btn c_img h_img" src="img/voice/btn.svg" alt="">
+            <div id="fadeout02" class="fadeout"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="voice">
+      <div class="box">
+        <h2 class="ttl fs42 blue tac mb10">プロ講師の声</h2>
+        <div class="relative p30">
+          <img id="voice_img03" class="mb30" src="img/voice/img03.webp" alt="">
+          <img id="voice_img04" src="img/voice/img04.svg" alt="">
+          <h3 id="voice_ttl02" class="fs32 pink mb30">家庭教師のプロフェッショナルが語る<br>「8学部6校合格」秘話!」</h3>
+          <p id="voice_txt03" class="voice_txt">Sさんの指導が始まったのは、彼女が高校３年生になったばかりの４月でした。Sさんには将来幼児教育の道に進みたいという夢がありましたので、第一希望はもちろん教育学部、それも幼児教育が専攻できる大学でした。<br><br>指導開始当時、英語及び国語の基礎は出来ていましたが、国語に関してかなりの苦手意識があり、現代文の読解問題では自分の解釈に自信が持てないために解答についてさんざん悩んであれこれ考えた挙句に誤った解答をしてしまうことが多く見られました。</p>
+          <img id="voice_btn03" class="voice_btn c_img h_img" src="img/voice/btn.svg" alt="">
+          <div id="fadeout03" class="fadeout"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="course">
+      <div class="box ptb60">
+        <h2 class="ttl fs42 blue tac mb15">コース一覧・料金</h2>
+        <p id="course_ttl" class="green bold tac mb45">学研の家庭教師は、安心の『月謝制』。<br>高額教材のセット販売などもございません。</p>
+        <ul class="blue_box br15 p25 sec mb10">
+          <li class="w320 mb30">
+            <img class="mb15" src="img/course/img02.webp" alt="">
+            <h3 class="course_ttl02 fs28 white tac mb10">高校生1年生コース</h3>
+            <p class="fs20 mb15">今後の進路が決まる重要な分岐点。将来の目標に向けて早めのスタートで差をつけます。</p>
+            <p class="pink_box bold pink tac p5">1時間 4,730<span class="fs18">円（税込）～</span></p>
+          </li>
+          <li class="w320 mb30">
+            <img class="mb15" src="img/course/img03.webp" alt="">
+            <h3 class="course_ttl02 fs28 white tac mb10">高校生2年生コース</h3>
+            <p class="fs20 mb15">進路目標を決定する大事な年。定めた目標に向けて的確な指導で効率良く成績アップを狙います。</p>
+            <p class="pink_box bold pink tac p5">1時間 4,840<span class="fs18">円（税込）～</span></p>
+          </li>
+          <li class="w320">
+            <img class="mb15" src="img/course/img04.webp" alt="">
+            <h3 class="course_ttl02 fs28 white tac mb10">高校生3年生コース</h3>
+            <p class="fs20 mb15">「第一志望」に向けて的確で効果的な学習を指導。志望校・学部に向けて入試対策をサポートします。</p>
+            <p class="pink_box bold pink tac p5">1時間 5,500<span class="fs18">円（税込）～</span></p>
+          </li>
+          <li class="w320">
+            <img class="mb15" src="img/course/img05.webp" alt="">
+            <h3 class="course_ttl02 fs28 white tac mb10">プロ家庭教師コース</h3>
+            <p class="fs20 mb15">学生による家庭教師とは違い、本格的なプロの講師が指導いたします。家庭教師のプロだからこそ高いクオリティの指導が可能です。</p>
+            <p class="pink_box bold pink tac p5">1時間 8,910<span class="fs18">円（税込）～</span></p>
+          </li>
+        </ul>
+        <p class="fs16 tac">※オンライン授業の料金は上記と異なります。詳細はお問合せください。</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="m_box pt30 pb60">
+        <h2 class="pink_box yellow_bg br15 p15 fs28 blue bold relative tac mb45">
+          <span class="pink_txt plr20">学研の家庭教師だからこの実績<i>!</i></span><br>有名大学・難関大学への合格者続出<i>!</i>
+          <img id="course_img06" src="img/course/img06.svg">
+        </h2>
+
+        <h3 class="course_ttl03 fs32 green tac mb15"><span>定期テスト対策コース</span></h3>
+        <img class="c_img mb20" src="img/course/img07.webp">
+        <p class="fs22 blue_bg br15 p30 mb60">学校のテストの点数を上げたい方にお勧めです。苦手科目の克服・得意科目の伸長など生徒様の目的・目標に合わせた指導を行います。学校のテストが安定してくれば、大手模試や志望校の対策に方針を変更することも可能です。</p>
+        <h3 class="course_ttl03 fs32 green tac mb15"><span>AO・推薦対策コース</span></h3>
+        <img class="c_img mb20" src="img/course/img08.webp">
+        <p class="fs22 blue_bg br15 p30 mb60">総合型選抜や学校推薦型選抜での受験をお考えの方にお勧めです。受験に必要な科目の基礎力強化、志望校対策、小論文、推薦文の添削や対策を行います。</p>
+        <h3 class="course_ttl03 fs32 green tac mb15"><span>苦手科目・志望校別、難関大学対策コース</span></h3>
+        <img class="c_img mb20" src="img/course/img09.webp">
+        <p class="fs22 blue_bg br15 p30 mb30">マンツーマン指導で一人ひとりの個性や目標に合わせたプランニングを行ったうえで、きめ細かくフォローをしていきます。指導時間の中であれば、科目・単元の決まりはありませんので、定期テスト直前には定期テスト対策に変更することも可能です。</p>
+      </div>
+      <div class="box pb30">
+        <h2 class="fs42 blue tac mb10">だから、学研の家庭教師は<br><span class="pink_txt plr20">どこよりも差がつく<i>!</i></span></h2>
+        <div class="w520 c_img green_bg br15 p20 tac">
+          <h3 class="fs32 green">さあ、次はあなたも<i>!</i></h3>
+          <p>まずは、資料請求からはじめてみませんか?<br>早く始めれば始めるほど、大きく差は開きます。</p>
+        </div>
+        <img class="strong_img06" class="c_img" src="img/strong/img06.svg" alt="">
+        <img src="img/common/arw.svg" alt="">
+      </div>
+    </section>
+
+    <section>
+      <div class="box pb45">
+        <h2><img class="banner_ttl c_img mb15" src="img/banner/ttl.svg?date=20220525" alt=""></h2>
+        <div class="relative">
+          <img src="img/banner/img03.webp?date=20220525" alt="">
+          <!-- <p class="banner_date fs32 bold tac white">4<span class="fs20">/</span>30<br><span class="fs26">まで</span></p> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="yellow_bg">
+      <div class="m_box pt30 pb45">
+        <h2><img class="w320 c_img mb20" src="img/lead/ttl.svg" alt="資料請求までわずか1分!"></h2>
+        <img class="lead_img c_img" src="img/lead/img.svg" alt="">
+        <a class="btn_box h_btn mb30" href="#form"><img class="lead_btn c_img" src="img/lead/btn.svg"></a>
+        <p class="lead_notes fs22 bold"><mark class="fs26 pink">オンラインでの指導</mark>も行っているため<br>いつでもどこでも指導を受けることができます。<img src="img/lead/img02.webp" alt=""></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="m_box pt60 pb60">
+        <h2 class="ttl fs50 blue tac mb60">体験指導までの流れ</h2>
+        <div class="step_box blue_box mb60 relative">
+          <img class="step_ttl c_img lazyload" data-src="img/step/ttl01.svg" loading="lazy">
+          <h3 class="fs46 pink tac mb10">カウンセリング（無料）</h3>
+          <img class="c_img mb30 lazyload" data-src="img/step/img01.webp" loading="lazy">
+          <p class="fs18 bold lh16 tac mb30">
+            まず、お子様には学研の家庭教師の講師、または専属スタッフによる<br>体験授業、カウンセリング（学習相談）を受けていただきます。<br><br><span
+              class="fs20 green">カウンセリングでは、当社の豊富な経験・指導実績を活かして、<br>お子様の現在の問題点とその原因を分析。</span><br><br>性格・学校・家庭環境なども考慮しながら、<br>お子様にとってベストな講師と指導内容をご提案させていただきます。
+          </p>
+          <hr class="mb30">
+          <p class="fs18 bold lh16 tac mb15">申し込みフォーム、またはお電話でお気軽にお問い合わせください。<br>ご相談やご質問なども受け付けております。</p>
+          <ul class="sec aic">
+            <li><a href="tel:0120351056"><img id="step_tel" class="h_img lazyload" data-src="img/header/tel.svg"
+                  alt="0120-351-056"></a></li>
+            <li><a href="#form"><img id="step_btn" class="h_img lazyload" data-src="img/step/btn.svg"></a></li>
+          </ul>
+        </div>
+        <div class="step_box blue_box relative">
+          <img class="step_ttl c_img lazyload" data-src="img/step/ttl02.svg" loading="lazy">
+          <h3 class="fs46 pink tac mb10">体験指導（60分）</h3>
+          <img class="c_img mb30 lazyload" data-src="img/step/img02.webp" loading="lazy">
+          <p class="fs18 bold lh16 tac mb30">大切なのは、家庭教師というスタイルがお子様に合っているかをしっかり判断することです。<span
+              class="fs20 green">「自分に合った勉強のやり方」をみつけることが成果につながります。</span>まずは家庭教師の雰囲気を味わっていただき、お子様の反応を見てください。<br><br>※地域や指導内容により上記と異なる場合がございます。<br>詳細はお問い合わせください。
+          </p>
+          <hr class="mb30">
+          <h4 class="fs28 green tac mb30">学研の家庭教師体験レッスンの<br><span id="step02_ttl" class="fs46 dib">3つのポイント</span></h4>
+          <ul id="step02_li">
+            <li class="fs26 bold pink mb15">❶お子様の現在の実力がわかります</li>
+            <li class="fs26 bold pink mb15">❷お子様にぴったりの勉強方法が見つかります</li>
+            <li class="fs26 bold pink mb30">❸今までの家庭教師との違いがわかります</li>
+          </ul>
+          <div class="black_box p20 fs20 bold tac">体験授業を受講したからと言って、<br>ご入会を強くおすすめすることはありませんので、<br>ご安心ください。</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blue_bg">
+      <div class="box pt45 pb60">
+        <h2 class="ttl fs50 blue tac mb30">よくあるご質問</h2>
+        <p class="fs18 bold tac mb45">大切なお子様の勉強方法ですから不安なことも多いはずです。<br>その他、ご不明な点などございましたら、お気軽にお問い合わせください。</p>
+        <ul class="sec">
+          <li class="mb10"><a class="faq_btn fs22 bold white tac" href="#faq01">成績についてのご質問</a></li>
+          <li class="mb10"><a class="faq_btn fs22 bold white tac" href="#faq02">家庭教師についてのご質問</a></li>
+          <li><a class="faq_btn fs22 bold white tac" href="#faq03">学び方についてのご質問</a></li>
+          <li><a class="faq_btn fs22 bold white tac" href="#faq04">弊社についてのご質問</a></li>
+        </ul>
+        <h3 id="faq01" class="faq_ttl fs32 white mb30 mt45">成績についてのご質問</h3>
+        <div class="accordion_box p30 mb30">
+          <h3 class="faq_q fs26 green">ほんとうに成績は上がりますか？</h3>
+          <p class="faq_a fs22">
+            学研の家庭教師は、教務部に対して毎月の報告を義務付けております。「指導報告書」「定期ミーティング」「個別ミーティング」のシステムにより、お子様の指導状況をチェックし、目標達成までの学習管理を教務部のバックアップにより綿密に行いますので自主学習の習慣と共に学力が向上していきます。
+          </p>
+        </div>
+        <div class="accordion_box p30 mb30">
+          <h3 class="faq_q fs26 green">受験対策は大丈夫ですか？1対1だと競争心がなくなったりはしませんか？</h3>
+          <p class="faq_a fs22">弊社は、受験対策として模擬テストをおすすめしており、 夏期講習・冬期講習も一部教務センターにて実施しております。
+            偏差値や志望校到達率の把握や単元別の習熟度チェックから、テスト慣れ、 会場慣れに至るまで、受験生のサポートはお任せください。</p>
+        </div>
+
+        <h3 id="faq02" class="faq_ttl fs32 white mb30 mt45">家庭教師についてのご質問</h3>
+        <div class="accordion_box p30 mb30">
+          <h3 class="faq_q fs26 green">家庭教師は、アルバイト感覚ではありませんか？</h3>
+          <p class="faq_a fs22">
+            弊社では多くの登録希望家庭教師の中から、学力だけでなく指導力や責任感等の家庭教師としての適正検査「YGPI」を実施して合否を決めております。紹介後も日々の指導状況から毎月の指導報告を義務付けるなど、しっかりとした管理をしておりますのでご安心ください。
+          </p>
+        </div>
+        <div class="accordion_box p30 mb30">
+          <h3 class="faq_q fs26 green">本人との相性は合うのでしょうか？</h3>
+          <p class="faq_a fs22">要望や条件を詳しくお伺いし、専門のスタッフが選考にあたり、
+            ミーティングをした上で紹介しておりますので安心です。弊社は30年以上の実績により家庭教師の登録数も豊富なので、お子様にピッタリの家庭教師を紹介できるシステムとなっております。</p>
+        </div>
+        <div class="accordion_box p30 mb30">
+          <h3 class="faq_q fs26 green">家庭教師交代、進路相談などはできるのでしょうか？</h3>
+          <p class="faq_a fs22">
+            大丈夫です。何かありましたら、すぐに弊社へご連絡ください。教務部による管理体制を整えておりますので、担当社員・スタッフが迅速に対応いたします。家庭教師個人ではまかなえないことを全て教務部でサポートさせていただきます。
+          </p>
+        </div>
+
+        <h3 id="faq03" class="faq_ttl fs32 white mb30 mt45">学び方についてのご質問</h3>
+        <div class="accordion_box p30 mb30">
+          <h3 class="faq_q fs26 green">特別な教材を購入しないといけないのですか？</h3>
+          <p class="faq_a fs22">弊社は、高額教材のローン契約による販売などは一切ありません。 お子様がお持ちの教科書等で指導を行うことができます。</p>
+        </div>
+        <div class="accordion_box p30 mb30">
+          <h3 class="faq_q fs26 green">勉強部屋がないのですが？</h3>
+          <p class="faq_a fs22">ご安心ください。リビングなどでも指導は可能です。また、自宅以外の場所で授業を希望される場合には、近隣の公共施設や家庭教師宅指導もございます。まずは一度ご相談ください。</p>
+        </div>
+
+        <h3 id="faq04" class="faq_ttl fs32 white mb30 mt45">弊社についてのご質問</h3>
+        <div class="accordion_box p30 mb30">
+          <h3 class="faq_q fs26 green">テスト前の短期間だけでも申し込みできますか？</h3>
+          <p class="faq_a fs22">テスト前や、夏休みだけなどの短期間もお任せください。目的に応じた指導計画を立て、集中特訓を組むことができます。</p>
+        </div>
+        <div class="accordion_box p30 mb30">
+          <h3 class="faq_q fs26 green">病気で休んだり、用事で休んだりすると授業料はどうなりますか？</h3>
+          <p class="faq_a fs22">休んでしまった場合はその分の振替授業を行えます。それによって別途料金がかかることもございません。</p>
+        </div>
+        <div class="accordion_box p30">
+          <h3 class="faq_q fs26 green">やめたくても簡単にやめられないのではないですか？</h3>
+          <p class="faq_a fs22">弊社は1ヶ月前までに退会の申し出をいただければ、 いつでも退会することができます。その場合解約料は必要ありません。
+            また、退会申告できない場合であっても、1ヶ月分の指導料より高いお金はいただきません。 もちろん、保証金等もございません。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="form">
+      <div class="m_box ptb60">
+        <h2 class="ttl fs50 blue tac mb30">お問い合わせ</h2>
+
+        <form action="./confirm.html" method="post" name="input_fm" id="form-name" novalidate="">
+<input type="hidden" id="tmp_x">
+<input type="hidden" name="token" value="<?php _h(Token::value()); ?>" />
+
+<?php include __DIR__.'/index.form_inner.php'; ?>
+        </form>
+
+      </div>
+    </section><!-- //#contact -->
+
+    <div id="footer_on">
+      <div class="box ptb30">
+        <ul class="flex jcc aic">
+          <li><img id="f_logo01" class="lazyload" data-src="img/footer/logo01.svg"></li>
+          <li><img id="f_logo02" class="lazyload" data-src="img/footer/logo02.svg"></li>
+        </ul>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="box tac ptb30 fs14">
+        <nav class="footer-nav">
+          <a href="https://www.kame.co.jp/privacy/" target="_blank" class="footer-nav-item">プライバシーポリシー</a>
+          <a href="https://www.kame.co.jp/policy/" target="_blank" class="footer-nav-item">特定商取引法に基づく表記</a>
+        </nav>
+        <p class="copyright">Copyright &copy; 2022 学研 エル・スタッフィング. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JS -->
+<!-- <?php /*
+  <script src="js/jquery-1.12.4.js" defer></script>
+*/
+?> -->
+<script src="/js/jquery-3.6.0.min.js"></script>
+
+  <!-- 画像遅延読み込み -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/plugins/unveilhooks/ls.unveilhooks.min.js"></script>
+  <!-- Slick -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer>
+  </script>
+  <!-- Setup -->
+  <script src="js/setup.js" defer></script>
+  <script src="js/custom.js" defer></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10707598-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-10707598-1');
+  gtag('config', 'AW-1046713053');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics end -->
+
+
+<?php include __DIR__.'/index.js.php'; ?>
+</body>
+
+</html>

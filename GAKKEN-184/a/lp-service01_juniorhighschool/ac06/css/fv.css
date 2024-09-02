@@ -1,0 +1,231 @@
+@charset "utf-8";
+/*----- header -----*/
+#header {
+  position: fixed;
+  padding: 1.4rem 0;
+  width: 75rem;
+  background: #FFF;
+  z-index: 101;
+  top: 0;
+}
+#h_logo {width:20rem;}
+#h_tel {width:19.3rem;}
+#h_btn {width:28.4rem;}
+
+/*----- mi -----*/
+#mi {
+  overflow: hidden;
+  position: relative;
+  height: 49.6rem;
+}
+#mi_bg {
+  position: relative;
+}
+#mi_bg li {
+  background: url(../img/mi/bg01.png) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 49.6rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index:10;
+  opacity: 0;
+  animation: anime 18s 0s infinite;
+}
+#mi_bg li:nth-child(2) {
+  background: url(../img/mi/bg02.png) no-repeat center center;
+  background-size: cover;
+  animation-delay: 6s;
+}
+/* #mi_bg li:nth-child(3) {
+  background: url(../img/mi/bg03.webp) no-repeat center center;
+  background-size: cover;
+  animation-delay: 12s;
+} */
+@keyframes anime {
+  0% {opacity: 0;}
+  16% {opacity: 1;}
+  34% {opacity: 1;}
+  50% {
+    opacity: 0;
+    transform: scale(1.15);
+    z-index:9;
+  }
+  100% {opacity: 0}
+}
+#mi_box {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+#mi_box img {
+  height: 50.8rem;
+  display: inline-block;
+}
+
+/*----- banner -----*/
+#banner .box {
+  padding: 1rem 0 2rem 0;
+}
+.banner_area {
+  padding: 0 2rem;
+  width: 70rem;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.banner_area ul li p {
+  white-space: nowrap;
+}
+
+.banner_area ul li h3 {
+  padding: 0.4rem 0 0 3.2rem;
+  box-sizing: border-box;
+  max-width: 40.8rem;
+}
+
+
+.banner_area .white_bg {
+  padding: 5rem 0.5rem 0.5rem 2.5rem;
+  box-sizing: border-box;
+}
+
+.banner_date {
+  width: 12rem;
+  height: 11.8rem;
+  padding: 4rem 0 0 0;
+  position: absolute;
+  top: 12.2rem;
+  left: 2rem;
+  line-height: 0.8;
+}
+
+.banner_date.first {
+  top: 12.8rem;
+}
+/* 以下slider */
+.slider{
+  opacity: 0;
+  transition: 3s;
+}
+.slick-initialized{
+  opacity: 1
+}
+/* slick_dots */
+.slick-slide {
+  margin-bottom:1.5rem;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+.slick-dots li {
+  width: 3.6rem;
+  height: 0.6rem;
+  background: #CCC;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+}
+.slick-dots li:last-child {
+  margin: 0;
+}
+.slick-dots li button {
+  visibility: hidden;
+  width: 3.6rem;
+  height: 0.6rem;
+  position: absolute;
+}
+.slick-dots li.slick-active {
+  background: #1a4369;
+}
+
+
+/*----- coversion -----*/
+#conversion {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1rem;
+  background: rgb(255 255 255 / 75%);
+}
+/*----- lead -----*/
+.lead_img {
+  width: 58.3rem;
+  position: absolute;
+  top: -4.6rem;
+  left: 0;
+  right: 0;
+}
+.btn_box {
+  padding: 0 0.3rem 0.3rem 0;
+  width: 65.3rem;
+  height: 11.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 6rem;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 11.6rem;
+  border-radius: 6rem;
+}
+.btn_box02 {
+  background: url(../img/common/btn02.svg) no-repeat center center;
+  background-size: cover;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(68, 3, 3, 0.2);
+}
+.btn_box03 {
+  background: url(../img/common/btn03.svg) no-repeat center center;
+  background-size: cover;
+}
+.btn_box::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: -18rem;
+  left: 0;
+  width: 3rem;
+  height: 100%;
+  background-color: #ffffff;
+  animation: shiny-btn 3s ease-in-out infinite;
+}
+.btn_box:hover::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff26;
+  animation: none;
+}
+@keyframes shiny-btn {
+  0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+  80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+  81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+  100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+.lead_notes {
+  background: #ffffff;
+  /* border: 1px solid #199342; */
+  padding: 1.5rem 3rem;
+  position: relative;
+  width: 62rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 0px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0.5rem 0.5rem 0px 0px rgba(0,0,0,0.15);
+  box-shadow: 0.5rem 0.5rem 0px 0px rgba(0,0,0,0.15);
+  border: 0.1rem solid #FF6E00;
+}
+.lead_notes img {
+  width: 17rem;
+  position: absolute;
+  top: -0.5rem;
+  right: -3rem;
+  transform: rotate(4deg);
+  -webkit-box-shadow: 0.5rem 0.5rem 0px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0.5rem 0.5rem 0px 0px rgba(0,0,0,0.15);
+  box-shadow: 0.5rem 0.5rem 0px 0px rgba(0,0,0,0.15);
+}

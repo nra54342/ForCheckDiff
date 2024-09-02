@@ -1,0 +1,918 @@
+  var listShop = [
+    {
+      area : '北海道・東北エリア',
+      city : [
+        {
+          name : '北海道',
+          modal : 'modal01',
+          class : '',
+          shop : [
+            {name: "江別市",},
+            {name: "札幌市厚別区",},
+            {name: "札幌市手稲区",},
+            {name: "札幌市清田区",},
+            {name: "札幌市西区",},
+            {name: "札幌市中央区",},
+            {name: "札幌市東区",},
+            {name: "札幌市南区",},
+            {name: "札幌市白石区",},
+            {name: "札幌市豊平区",},
+            {name: "札幌市北区",},
+            {name: "小樽市",},
+            {name: "石狩市",},
+            {name: "北広島市",},
+          ],
+        },
+        {
+          name : '青森県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '秋田県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '岩手県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '山形県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '宮城県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '福島県',
+          class : 'online',
+          shop : [
+          ],
+        },
+      ],
+    },
+    {
+      area : '関東エリア',
+      city : [
+        {
+          name : '東京都',
+          modal : 'modal02',
+          class : '',
+          shop : [
+            {name: "稲城市",},
+            {name: "葛飾区",},
+            {name: "江戸川区",},
+            {name: "江東区",},
+            {name: "港区",},
+            {name: "荒川区",},
+            {name: "国分寺市",},
+            {name: "国立市",},
+            {name: "狛江市",},
+            {name: "三鷹市",},
+            {name: "渋谷区",},
+            {name: "小金井市",},
+            {name: "小平市",},
+            {name: "昭島市",},
+            {name: "新宿区",},
+            {name: "杉並区",},
+            {name: "世田谷区",},
+            {name: "清瀬市",},
+            {name: "西東京市",},
+            {name: "千代田区",},
+            {name: "足立区",},
+            {name: "多摩市",},
+            {name: "台東区",},
+            {name: "大田区",},
+            {name: "中央区",},
+            {name: "中野区",},
+            {name: "町田市",},
+            {name: "調布市",},
+            {name: "東久留米市",},
+            {name: "東村山市",},
+            {name: "東大和市",},
+            {name: "日野市",},
+            {name: "八王子市",},
+            {name: "板橋区",},
+            {name: "品川区",},
+            {name: "府中市",},
+            {name: "武蔵野市",},
+            {name: "文京区",},
+            {name: "豊島区",},
+            {name: "北区",},
+            {name: "墨田区",},
+            {name: "目黒区",},
+            {name: "立川市",},
+            {name: "練馬区",},
+          ],
+        },
+        {
+          name : '神奈川県',
+          modal : 'modal03',
+          class : '',
+          shop : [
+            {name: "愛甲郡愛川町",},
+            {name: "綾瀬市",},
+            {name: "伊勢原市",},
+            {name: "横須賀市",},
+            {name: "横浜市旭区",},
+            {name: "横浜市磯子区",},
+            {name: "横浜市栄区",},
+            {name: "横浜市金沢区",},
+            {name: "横浜市戸塚区",},
+            {name: "横浜市港南区",},
+            {name: "横浜市港北区",},
+            {name: "横浜市神奈川区",},
+            {name: "横浜市瀬谷区",},
+            {name: "横浜市西区",},
+            {name: "横浜市青葉区",},
+            {name: "横浜市泉区",},
+            {name: "横浜市中区",},
+            {name: "横浜市鶴見区",},
+            {name: "横浜市都筑区",},
+            {name: "横浜市南区",},
+            {name: "横浜市保土ヶ谷区",},
+            {name: "横浜市緑区",},
+            {name: "海老名市",},
+            {name: "鎌倉市",},
+            {name: "茅ヶ崎市",},
+            {name: "厚木市",},
+            {name: "高座郡寒川町",},
+            {name: "座間市",},
+            {name: "三浦郡葉山町",},
+            {name: "三浦市",},
+            {name: "小田原市",},
+            {name: "秦野市",},
+            {name: "逗子市",},
+            {name: "川崎市宮前区",},
+            {name: "川崎市幸区",},
+            {name: "川崎市高津区",},
+            {name: "川崎市川崎区",},
+            {name: "川崎市多摩区",},
+            {name: "川崎市中原区",},
+            {name: "川崎市麻生区",},
+            {name: "相模原市中央区",},
+            {name: "相模原市南区",},
+            {name: "相模原市緑区",},
+            {name: "足柄下郡真鶴町",},
+            {name: "足柄下郡湯河原町",},
+            {name: "足柄上郡開成町",},
+            {name: "足柄上郡山北町",},
+            {name: "足柄上郡大井町",},
+            {name: "足柄上郡中井町",},
+            {name: "大和市",},
+            {name: "中郡大磯町",},
+            {name: "中郡二宮町",},
+            {name: "藤沢市",},
+            {name: "南足柄市",},
+            {name: "平塚市",},
+          ],
+        },
+        {
+          name : '千葉県',
+          modal : 'modal04',
+          class : '',
+          shop : [
+            {name: "浦安市",},
+            {name: "我孫子市",},
+            {name: "鎌ヶ谷市",},
+            {name: "市川市",},
+            {name: "習志野市",},
+            {name: "松戸市",},
+            {name: "成田市",},
+            {name: "千葉市稲毛区",},
+            {name: "千葉市花見川区",},
+            {name: "千葉市若葉区",},
+            {name: "千葉市中央区",},
+            {name: "千葉市美浜区",},
+            {name: "千葉市緑区",},
+            {name: "船橋市",},
+            {name: "柏市",},
+            {name: "野田市",},
+            {name: "流山市",},
+          ],
+        },
+        {
+          name : '埼玉県',
+          modal : 'modal05',
+          class : '',
+          shop : [
+            {name: "さいたま市浦和区",},
+            {name: "さいたま市岩槻区",},
+            {name: "さいたま市見沼区",},
+            {name: "さいたま市桜区",},
+            {name: "さいたま市西区",},
+            {name: "さいたま市大宮区",},
+            {name: "さいたま市中央区",},
+            {name: "さいたま市南区",},
+            {name: "さいたま市北区",},
+            {name: "さいたま市緑区",},
+            {name: "ふじみ野市",},
+            {name: "羽生市",},
+            {name: "越谷市",},
+            {name: "桶川市",},
+            {name: "加須市",},
+            {name: "吉川市",},
+            {name: "久喜市",},
+            {name: "狭山市",},
+            {name: "熊谷市",},
+            {name: "戸田市",},
+            {name: "行田市",},
+            {name: "鴻巣市",},
+            {name: "坂戸市",},
+            {name: "三郷市",},
+            {name: "志木市",},
+            {name: "春日部市",},
+            {name: "所沢市",},
+            {name: "上尾市",},
+            {name: "新座市",},
+            {name: "深谷市",},
+            {name: "川越市",},
+            {name: "川口市",},
+            {name: "草加市",},
+            {name: "朝霞市",},
+            {name: "鶴ヶ島市",},
+            {name: "東松山市",},
+            {name: "南埼玉郡宮代町",},
+            {name: "日高市",},
+            {name: "入間郡三芳町",},
+            {name: "入間郡毛呂山町",},
+            {name: "入間市",},
+            {name: "白岡市",},
+            {name: "八潮市",},
+            {name: "飯能市",},
+            {name: "富士見市",},
+            {name: "北葛飾郡松伏町",},
+            {name: "北葛飾郡杉戸町",},
+            {name: "北足立郡伊奈町",},
+            {name: "北本市",},
+            {name: "本庄市",},
+            {name: "蓮田市",},
+            {name: "和光市",},
+            {name: "蕨市",},
+          ],
+        },
+        {
+          name : '茨城県',
+          modal : 'modal06',
+          class : '',
+          shop : [
+            {name: "かすみがうら市",},
+            {name: "つくばみらい市",},
+            {name: "つくば市",},
+            {name: "稲敷郡阿見町",},
+            {name: "稲敷郡美浦村",},
+            {name: "下妻市",},
+            {name: "牛久市",},
+            {name: "結城郡八千代町",},
+            {name: "坂東市",},
+            {name: "桜川市",},
+            {name: "取手市",},
+            {name: "守谷市",},
+            {name: "常総市",},
+            {name: "石岡市",},
+            {name: "筑西市",},
+            {name: "土浦市",},
+            {name: "龍ケ崎市",},
+          ],
+        },
+        {
+          name : '群馬県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '栃木県',
+          class : 'online',
+          shop : [
+          ],
+        },
+      ],
+    },
+    {
+      area : '東海エリア',
+      city : [
+        {
+          name : '静岡県',
+          modal : 'modal07',
+          class : '',
+          shop : [
+            {name: "伊豆の国市",},
+            {name: "掛川市",},
+            {name: "菊川市",},
+            {name: "湖西市",},
+            {name: "御殿場市",},
+            {name: "三島市",},
+            {name: "周智郡森町",},
+            {name: "駿東郡小山町",},
+            {name: "駿東郡清水町",},
+            {name: "駿東郡長泉町",},
+            {name: "沼津市",},
+            {name: "焼津市",},
+            {name: "榛原郡吉田町",},
+            {name: "裾野市",},
+            {name: "静岡市葵区",},
+            {name: "静岡市駿河区",},
+            {name: "静岡市清水区",},
+            {name: "袋井市",},
+            {name: "田方郡函南町",},
+            {name: "島田市",},
+            {name: "藤枝市",},
+            {name: "磐田市",},
+            {name: "浜松市西区",},
+            {name: "浜松市中区",},
+            {name: "浜松市天竜区",},
+            {name: "浜松市東区",},
+            {name: "浜松市南区",},
+            {name: "浜松市北区",},
+            {name: "浜松市北区",},
+            {name: "富士宮市",},
+            {name: "富士市",},
+            {name: "牧之原市",},
+          ],
+        },
+        {
+          name : '愛知県',
+          modal : 'modal08',
+          class : '',
+          shop : [
+            {name: "あま市",},
+            {name: "みよし市",},
+            {name: "愛西市",},
+            {name: "愛知郡東郷町",},
+            {name: "安城市",},
+            {name: "一宮市",},
+            {name: "稲沢市",},
+            {name: "岡崎市",},
+            {name: "海部郡蟹江町",},
+            {name: "海部郡大治町",},
+            {name: "海部郡飛島村",},
+            {name: "額田郡幸田町",},
+            {name: "蒲郡市",},
+            {name: "刈谷市",},
+            {name: "岩倉市",},
+            {name: "犬山市",},
+            {name: "江南市",},
+            {name: "高浜市",},
+            {name: "春日井市",},
+            {name: "小牧市",},
+            {name: "常滑市",},
+            {name: "瀬戸市",},
+            {name: "清須市",},
+            {name: "西春日井郡豊山町",},
+            {name: "西尾市",},
+            {name: "大府市",},
+            {name: "丹羽郡大口町",},
+            {name: "丹羽郡扶桑町",},
+            {name: "知多郡阿久比町",},
+            {name: "知多郡東浦町",},
+            {name: "知多郡美浜町",},
+            {name: "知多郡武豊町",},
+            {name: "知多市",},
+            {name: "知立市",},
+            {name: "長久手市",},
+            {name: "津島市",},
+            {name: "東海市",},
+            {name: "日進市",},
+            {name: "半田市",},
+            {name: "尾張旭市",},
+            {name: "碧南市",},
+            {name: "豊橋市",},
+            {name: "豊川市",},
+            {name: "豊田市",},
+            {name: "豊明市",},
+            {name: "北名古屋市",},
+            {name: "名古屋市港区",},
+            {name: "名古屋市守山区",},
+            {name: "名古屋市昭和区",},
+            {name: "名古屋市瑞穂区",},
+            {name: "名古屋市西区",},
+            {name: "名古屋市千種区",},
+            {name: "名古屋市中区",},
+            {name: "名古屋市中川区",},
+            {name: "名古屋市中村区",},
+            {name: "名古屋市天白区",},
+            {name: "名古屋市東区",},
+            {name: "名古屋市南区",},
+            {name: "名古屋市熱田区",},
+            {name: "名古屋市北区",},
+            {name: "名古屋市名東区",},
+            {name: "名古屋市緑区",},
+            {name: "弥富市",},
+          ],
+        },
+        {
+          name : '岐阜県',
+          modal : 'modal09',
+          class : '',
+          shop : [
+            {name: "安八郡安八町",},
+            {name: "安八郡神戸町",},
+            {name: "安八郡輪之内町",},
+            {name: "羽島郡笠松町",},
+            {name: "羽島郡岐南町",},
+            {name: "羽島市",},
+            {name: "加茂郡坂祝町",},
+            {name: "加茂郡富加町",},
+            {name: "可児郡御嵩町",},
+            {name: "可児市",},
+            {name: "海津市",},
+            {name: "各務原市",},
+            {name: "関市",},
+            {name: "岐阜市",},
+            {name: "山県市",},
+            {name: "瑞穂市",},
+            {name: "多治見市",},
+            {name: "大垣市",},
+            {name: "美濃加茂市",},
+            {name: "不破郡関ヶ原町",},
+            {name: "不破郡垂井町",},
+            {name: "本巣郡北方町",},
+            {name: "本巣市",},
+            {name: "揖斐郡大野町",},
+            {name: "揖斐郡池田町",},
+            {name: "養老郡養老町",},
+          ],
+        },
+        {
+          name : '三重県',
+          modal : 'modal10',
+          class : '',
+          shop : [
+            {name: "いなべ市",},
+            {name: "伊勢市",},
+            {name: "員弁郡東員町",},
+            {name: "桑名郡木曽岬町",},
+            {name: "桑名市",},
+            {name: "三重郡菰野町",},
+            {name: "三重郡川越町",},
+            {name: "三重郡朝日町",},
+            {name: "四日市市",},
+            {name: "松阪市",},
+            {name: "津市",},
+            {name: "鈴鹿市",},
+          ],
+        },
+        {
+          name : '福井県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '石川県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '富山県',
+          class : 'online',
+          shop : [
+          ],
+        },
+      ],
+    },
+    {
+      area : '甲信越エリア',
+      city : [
+        {
+          name : '山梨県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '長野県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '新潟県',
+          class : 'online',
+          shop : [
+          ],
+        },
+      ],
+    },
+    {
+      area : '関西エリア',
+      city : [
+        {
+          name : '大阪府',
+          modal : 'modal11',
+          class : '',
+          shop : [
+            {name: "茨木市",},
+            {name: "羽曳野市",},
+            {name: "河内長野市",},
+            {name: "貝塚市",},
+            {name: "岸和田市",},
+            {name: "交野市",},
+            {name: "高石市",},
+            {name: "高槻市",},
+            {name: "阪南市",},
+            {name: "堺市堺区",},
+            {name: "堺市西区",},
+            {name: "堺市中区",},
+            {name: "堺市東区",},
+            {name: "堺市南区",},
+            {name: "堺市美原区",},
+            {name: "堺市北区",},
+            {name: "三島郡島本町",},
+            {name: "四條畷市",},
+            {name: "守口市",},
+            {name: "松原市",},
+            {name: "寝屋川市",},
+            {name: "吹田市",},
+            {name: "摂津市",},
+            {name: "泉佐野市",},
+            {name: "泉大津市",},
+            {name: "泉南郡熊取町",},
+            {name: "泉南郡田尻町",},
+            {name: "泉南郡岬町",},
+            {name: "泉南市",},
+            {name: "泉北郡忠岡町",},
+            {name: "大阪狭山市",},
+            {name: "大阪市阿倍野区",},
+            {name: "大阪市旭区",},
+            {name: "大阪市港区",},
+            {name: "大阪市此花区",},
+            {name: "大阪市住吉区",},
+            {name: "大阪市住之江区",},
+            {name: "大阪市城東区",},
+            {name: "大阪市生野区",},
+            {name: "大阪市西区",},
+            {name: "大阪市西成区",},
+            {name: "大阪市西淀川区",},
+            {name: "大阪市大正区",},
+            {name: "大阪市中央区",},
+            {name: "大阪市鶴見区",},
+            {name: "大阪市天王寺区",},
+            {name: "大阪市都島区",},
+            {name: "大阪市東住吉区",},
+            {name: "大阪市東成区",},
+            {name: "大阪市東淀川区",},
+            {name: "大阪市福島区",},
+            {name: "大阪市平野区",},
+            {name: "大阪市北区",},
+            {name: "大阪市淀川区",},
+            {name: "大阪市浪速区",},
+            {name: "大東市",},
+            {name: "池田市",},
+            {name: "東大阪市",},
+            {name: "藤井寺市",},
+            {name: "南河内郡河南町",},
+            {name: "南河内郡太子町",},
+            {name: "柏原市",},
+            {name: "八尾市",},
+            {name: "富田林市",},
+            {name: "豊中市",},
+            {name: "豊能郡能勢町",},
+            {name: "豊能郡豊能町",},
+            {name: "枚方市",},
+            {name: "箕面市",},
+            {name: "門真市",},
+            {name: "和泉市",},
+          ],
+        },
+        {
+          name : '京都府',
+          modal : 'modal12',
+          class : '',
+          shop : [
+            {name: "宇治市",},
+            {name: "乙訓郡大山崎町",},
+            {name: "亀岡市",},
+            {name: "久世郡久御山町",},
+            {name: "京田辺市",},
+            {name: "京都市右京区",},
+            {name: "京都市下京区",},
+            {name: "京都市左京区",},
+            {name: "京都市山科区",},
+            {name: "京都市上京区",},
+            {name: "京都市西京区",},
+            {name: "京都市中京区",},
+            {name: "京都市東山区",},
+            {name: "京都市南区",},
+            {name: "京都市伏見区",},
+            {name: "京都市北区",},
+            {name: "向日市",},
+            {name: "城陽市",},
+            {name: "相楽郡精華町",},
+            {name: "長岡京市",},
+            {name: "綴喜郡井手町",},
+            {name: "八幡市",},
+            {name: "木津川市",},
+          ],
+        },
+        {
+          name : '兵庫県',
+          modal : 'modal13',
+          class : '',
+          shop : [
+            {name: "芦屋市",},
+            {name: "伊丹市",},
+            {name: "加古郡稲美町",},
+            {name: "加古郡播磨町",},
+            {name: "加古川市",},
+            {name: "高砂市",},
+            {name: "三田市",},
+            {name: "神戸市須磨区",},
+            {name: "神戸市垂水区",},
+            {name: "神戸市西区",},
+            {name: "神戸市中央区",},
+            {name: "神戸市長田区",},
+            {name: "神戸市東灘区",},
+            {name: "神戸市灘区",},
+            {name: "神戸市兵庫区",},
+            {name: "神戸市北区",},
+            {name: "西宮市",},
+            {name: "川西市",},
+            {name: "尼崎市",},
+            {name: "姫路市",},
+            {name: "宝塚市",},
+            {name: "明石市",},
+          ],
+        },
+        {
+          name : '奈良県',
+          modal : 'modal14',
+          class : '',
+          shop : [
+            {name: "磯城郡三宅町",},
+            {name: "磯城郡川西町",},
+            {name: "磯城郡田原本町",},
+            {name: "河合町",},
+            {name: "橿原市",},
+            {name: "香芝市",},
+            {name: "桜井市",},
+            {name: "生駒郡安堵町",},
+            {name: "生駒郡三郷町",},
+            {name: "生駒郡斑鳩町",},
+            {name: "生駒郡平群町",},
+            {name: "生駒市",},
+            {name: "大和郡山市",},
+            {name: "大和高田市",},
+            {name: "天理市",},
+            {name: "奈良市",},
+            {name: "北葛城郡王寺町",},
+            {name: "北葛城郡広陵町",},
+            {name: "北葛城郡上牧町",},
+          ],
+        },
+        {
+          name : '滋賀県',
+          modal : 'modal15',
+          class : '',
+          shop : [
+            {name: "蒲生郡竜王町",},
+            {name: "近江八幡市",},
+            {name: "栗東市",},
+            {name: "湖南市",},
+            {name: "守山市",},
+            {name: "草津市",},
+            {name: "大津市",},
+            {name: "東近江市",},
+            {name: "野洲市",},
+          ],
+        },
+        {
+          name : '和歌山県',
+          class : 'online',
+          shop : [
+          ],
+        },
+      ],
+    },
+    {
+      area : '中国・四国エリア',
+      city : [
+        {
+          name : '岡山県',
+          modal : 'modal16',
+          class : '',
+          shop : [
+            {name: "岡山市中区",},
+            {name: "岡山市東区",},
+            {name: "岡山市南区",},
+            {name: "岡山市北区",},
+            {name: "倉敷市",},
+            {name: "総社市",},
+          ],
+        },
+        {
+          name : '広島県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '鳥取県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '島根県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '山口県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '香川県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '徳島県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '愛媛県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '高知県',
+          class : 'online',
+          shop : [
+          ],
+        },
+      ],
+    },
+    {
+      area : '九州エリア',
+      city : [
+        {
+          name : '福岡県',
+          modal : 'modal17',
+          class : '',
+          shop : [
+            {name: "糸島市",},
+            {name: "春日市",},
+            {name: "太宰府市",},
+            {name: "大野城市",},
+            {name: "筑紫野市",},
+            {name: "福岡市城南区",},
+            {name: "福岡市西区",},
+            {name: "福岡市早良区",},
+            {name: "福岡市中央区",},
+            {name: "福岡市東区",},
+            {name: "福岡市南区",},
+            {name: "福岡市博多区",},
+          ],
+        },
+        {
+          name : '熊本県',
+          modal : 'modal18',
+          class : '',
+          shop : [
+            {name: "熊本市西区",},
+            {name: "熊本市中央区",},
+            {name: "熊本市東区",},
+            {name: "熊本市南区",},
+            {name: "熊本市北区",},
+          ],
+        },
+        {
+          name : '佐賀県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '長崎県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '大分県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '宮崎県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '鹿児島県',
+          class : 'online',
+          shop : [
+          ],
+        },
+        {
+          name : '沖縄県',
+          class : 'online',
+          shop : [
+          ],
+        },
+      ],
+    }
+  
+  ];
+
+  var htmlListShop = '<ul id="shop_list">';
+  $.each(listShop, function(key, area) {
+    htmlListShop += '<li><h3 class="shop_ttl01 collapse fs36">'+ area.area +'</h3><div class="shop_box"><div class="flex">';
+
+    $.each(area.city, function(key, city) {
+      htmlListShop += '<div><h4 class="shop_ttl02 ' +city.class+ ' fs36 js_modalBtnWrap"><a href="" class="js_modalBtnCont" data-modal-btn="' +city.modal+ '">'+city.name+'</a></h4><div class="js_modalWrap" data-modal-cont="' +city.modal+ '"><div class="js_modalBG"></div><div class="js_modalContInner"><span class="js_modalClose"></span><div class="js_modalCont"><div class="shop_area"><p class="fs32 bold blue tac mb15">'+city.name+'<br>対面指導の対応エリア</p><div class="flex mb15">';
+      $.each(city.shop, function(key, shop) {
+        htmlListShop += '<p class="shop_ttl03 fs26">'+ shop.name +'</p>';
+      });
+      htmlListShop += '<p class="shop_ttl04 fs20">オンライン指導は<br>どの地域でも対応可能</p>';
+      htmlListShop += '</div>';
+      htmlListShop += '<p class="js_shop_link fs24 tar"><a href="#form">'+ city.name +'エリアのお問い合わせはこちら</a></p></div></div></div></div></div>';
+    });
+    htmlListShop += '</div><p class="shop_link fs24 tar"><a href="#form">オンライン指導のお問い合わせはこちら</a></p></div></li>';
+  });
+  htmlListShop += '</ul>';
+  $('.listShopAddress').append(htmlListShop);
+
+
+
+  // アコーディオン
+  var coll = document.getElementsByClassName("collapse");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+              content.style.display = "none";
+          }
+          else 
+          {
+              content.style.display = "block";
+          }
+      });
+  }
+
+  // モーダル（ポップアップ）
+  const modalBtn = document.querySelectorAll('.js_modalBtnCont');
+  const modalWindow = document.querySelectorAll('.js_modalWrap');
+  const modalClose = document.querySelectorAll('.js_modalClose');
+  const modalBG = document.querySelectorAll('.js_modalBG');
+  const shopLink = document.querySelectorAll('.js_shop_link');
+
+  window.addEventListener('DOMContentLoaded', function () {
+    for (let i = 0; i < modalBtn.length; i++) {
+      modalBtn[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        let dataModalBtn = modalBtn[i].getAttribute('data-modal-btn');
+        for (let j = 0; j < modalWindow.length; j++) {
+          if (modalWindow[j].getAttribute('data-modal-cont') === dataModalBtn) {
+            modalWindow[j].classList.add('active');
+          }
+        }
+      })
+      modalBG[i].addEventListener('click', function () {
+        modalWindow[i].classList.add('active2');
+        setTimeout(function() {
+          modalWindow[i].classList.remove('active');
+          modalWindow[i].classList.remove('active2');
+        }, 300);
+      })
+      shopLink[i].addEventListener('click', function () {
+        modalWindow[i].classList.add('active2');
+        setTimeout(function() {
+          modalWindow[i].classList.remove('active');
+          modalWindow[i].classList.remove('active2');
+        }, 300);
+      })
+      modalClose[i].addEventListener('click', function () {
+        modalWindow[i].classList.add('active2');
+        setTimeout(function() {
+          modalWindow[i].classList.remove('active');
+          modalWindow[i].classList.remove('active2');
+        }, 300);
+      })
+    }
+  });

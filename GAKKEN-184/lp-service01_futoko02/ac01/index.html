@@ -1,0 +1,801 @@
+<?php
+include __DIR__.'/index.php';
+?>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NH6KGWC');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/common/favicon.ico">
+  <title>学研の家庭教師</title>
+  <!-- Style -->
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link href="lib/slick/slick.css" rel="stylesheet">
+  <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+  <link href="lib/lightbox/css/lightbox.css" rel="stylesheet" />
+  <link href="lib/colorbox/colorbox.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/fv.css?data=20220727">
+  <link rel="preload" href="css/top.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="css/form.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="css/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <style type="text/css">
+    .error_field {
+      background-color: #ffdede;
+    }
+
+    .error_text {
+      color: red;
+    }
+  </style>
+</head>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH6KGWC" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="container">
+  <div id="header">
+    <div class="headerContent">
+      <div class="box">
+        <ul class="sec aic">
+          <li>
+            <h1><a href="./"><img id="h_logo" class="h_img" src="img/header/logo.webp" alt="学研の家庭教師"></a></h1>
+          </li>
+          <li><a href="tel:0120351056" class="aTagTel"><span>0120-351056</span><img id="h_tel" class="h_img"
+                src="img/header/tel.webp" alt="0120-351-056"></a></li>
+          <li><a href="#form" class="h_img hfBtn"><span>資料請求・お問い合わせ</span><img id="h_btn" src="img/header/btn.webp"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section id="mi" class="mb15">
+    <!-- <ul id="mi_bg">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul> -->
+    <div id="mi_box">
+      <img src="img/mi/miImg.webp" alt="">
+    </div>
+    <p class="fvNote fs13 blue bold">※1 学研グループのWILL学園の実績です。 ※2 自社調べ</p>
+  </section>
+
+  <section class="plr20 mb15 dnone">
+    <div class="bannerOneImg">
+      <a href="#blockStep">
+        <img src="img/gakken/onebanner.webp" alt="">
+      </a>
+    </div>
+  </section>
+  <section class="yellow_bg blockG01">
+    <div class="m_box p20 pt30">
+      <!-- <img class="lead_img c_img" src="img/lead/img.svg" alt=""> -->
+      <p class="bglr">資料請求までわずか1分<i>!</i></p>
+      <a class="btn_box h_btn mb30" href="#form">
+        <span>資料請求・体験指導のお問い合わせ</span>
+        <img class="lead_btn c_img" src="img/lead/btn.webp">
+      </a>
+      <p class="lead_notes fs26 bold"><mark class="fs30 orange">オンラインでの指導</mark>も行っているため<br>いつでもどこでも指導を受けることができます。<img
+          src="img/lead/img02.webp" alt=""></p>
+    </div>
+  </section>
+
+  <section class="p20 ptb30 mt20 plr20">
+    <div class="tac boxWT">
+      <p class="fs44 bold white">学研グループ<span class="fs36">では</span></p>
+      <p class="fs44 bold lh16"><span class="green">発達障がいのお子様に特化した</span><br><span class="green">学習支援</span>を行っております。
+      </p>
+    </div>
+  </section>
+  <section class="mb40">
+    <div class="boxWTImg">
+      <img src="img/gakken/logo_se.webp" alt="" class="logoSe">
+      <img src="img/gakken/boxWTImg.webp" alt="" class="boxWTImg01">
+      <p class="fs24 lh17 plr50">
+        不登校の中高生の居場所づくりをおこなう「WILL学園」を全国で運営しており、発達障がい・不登校のお子様が多数在籍しております。これまでに数多くの卒業生を送り出してきた中で培ったノウハウを生かし、発達障がいのお子様向けに特化した個別指導の家庭教師サービスもご提供しております。
+      </p>
+    </div>
+  </section>
+
+  <section id="voice" class="mb50">
+    <div class="plr50 ptb10">
+      <h2 class="ttl fs50 seblue tac mb30 lh12">生徒様・保護者様の声</h2>
+      <div class="relative mb50">
+        <div class="voice_ttl relative sec">
+          <img src="img/voice/v1.webp" alt="">
+          <h3 class="voice_ttl_h3 fs26 white">
+            <div>心強いサポートで<span>不安が和らぎ、</span><br><span>娘の成長を楽しめるように！</span></div>
+          </h3>
+        </div>
+        <p class="fs13 tar note_mg">※プライバシーに配慮して、画像はイメージです。</p>
+        <div class="relative p30">
+          <p id="voice_txt01" class="voice_txt yellow_bg br15 p30 pt20 fs26 lh16 medium">
+            ASD（自閉スペクトラム症）を持つ中学1年生の娘は、入学後すぐにイジメや授業のプレッシャーから引きこもりになってしまい、親としてもどう接したら良いのか手探りの状態でした。<br><br>そんな時、インターネットで学研さんの存在を知り、ご相談させていただきました。まさか自分の子が引きこもりになるとは思ってもおらず、とても焦っていたのを覚えています。<br><br>初めて来ていただいた時、娘は話すことも難しくて不安そうでしたが、学研さんの先生は優しく接してくれ、信頼を築いていきました。先生は娘の個性を理解し、学習面だけでなく内面まで丁寧にサポートしてくれました。日々の悩みはもちろんのこと、苦手教科が「なぜ苦手に思うのか」などに耳を傾け、柔軟なアプローチで対応してくれました。また、先生は私たち親にも不安や疑問に対して親身になって話を聞いてくれ、適切なアドバイスをいただきました。<br><br>先生が来るようになってから娘は少しずつ表情が明るくなり、安心感を感じている様子でした。娘が前向きに学習に取り組むようになり、自信を取り戻していく様子は、学研さんのサポートがあったからこそだと感じています。特に、こだわりが強い娘のペースを尊重しながら学習プランを組んでくれたことが良かったです。娘は無理なく学び、ゆっくりではありますがとても楽しみながら進んでいけています。<br><br>学研さんのサポートがなければ、私たち親も不安やストレスでいっぱいのまま過ごしていました。しかし、先生のおかげで家庭内のコミュニケーションが増え、今は娘の成長に対する期待感が日々膨らんでいます。また、最初の頃に先生が教えてくれた専門のクリニックの情報も大変助かりました。<br><br>娘は少しずつですが学校に対する不安感を和らげ、不定期ですが保健室へ通学することができるようになりました。学研さんの先生は専門的な知識と経験を持ちながらも温かい人柄で接してくれ、娘が自分らしく過ごせる環境を整えてくれました。感謝の気持ちでいっぱいです。<br><br>これからも学研さんのサポートを頼りに娘の成長を見守っていきたいと思います。学研さんの存在は私たち家族にとって心強い味方のため、これからも信頼関係を築きながら進んでいきたいです。
+          </p>
+          <img id="voice_btn01" class="voice_btn c_img h_img" src="img/voice/btn.svg" alt="">
+          <div id="fadeout01" class="fadeout"></div>
+        </div>
+      </div>
+      <div class="relative mb50">
+        <div class="voice_ttl relative sec">
+          <img src="img/voice/v2.webp" alt="">
+          <h3 class="voice_ttl_h3 fs26 white">
+            <div>兄弟ともにぴったりの先生！<br><span>「さすが学研」</span></div>
+          </h3>
+        </div>
+        <p class="fs13 tar note_mg">※プライバシーに配慮して、画像はイメージです。</p>
+        <div class="relative p30">
+          <p id="voice_txt02" class="voice_txt yellow_bg br15 p30 pt20 fs26 lh16 medium">
+            兄と妹、2人とも学研さんにお世話になりました。兄は中学2年の3学期からOD（起立性調節障がい）を発症し、不登校になりました。<br><br>「学校に行きたいとは思っている」「次のテストは頑張る」と言いながらも、当日になると<br>結局登校できず、家族としても応援すれば良いのか「頑張らなくても良いんだよ」と声をかければ良いのか分からず路頭に迷っていました。<br><br>学研さんはとても親身になってくれ、不登校の傾向や過去に担当されていた生徒さんの進路、連携のある専門のクリニックをご紹介いただいたりと勉強だけではなく、心理面や生活面でも支えていただけたと思います。<br><br>最初は先生に顔を見せることも難しかった兄が少しずつ表情が綻んで先生を心待ちにしている姿には涙がこぼれました。中学校の担任も親身になってくれましたが、ここまで心を開いたことはありませんでした。そのおかげもあり、高校進学では希望の桃山学院高校に合格することができました。<br><br>兄の影響もあって、小6から不登校になった妹も現在進行形で学研さんにお世話になっています。こちらは、芯がしっかりしており兄と違って「学校には行きたくない」「中学校には行かない」と明確な意思表示をしておりましたので、フリースクールに在籍をさせて高校進学の時に選択肢が狭まらないように学習面・心の面のサポートをしてもらっています。<br><br>妹も先生が来るのを大変楽しみにしており、本当に毎回子どもにぴたっと合った先生をご絡介いただく様子に「さすが学研」と家族ともどもファンになっています。<br><br>これからも、引き続きよろしくお願いします。
+          </p>
+          <img id="voice_btn02" class="voice_btn c_img h_img" src="img/voice/btn.svg" alt="">
+          <div id="fadeout02" class="fadeout"></div>
+        </div>
+      </div>
+      <div class="relative mb50">
+        <div class="voice_ttl relative sec">
+          <img src="img/voice/v3.webp" alt="">
+          <h3 class="voice_ttl_h3 fs26 white">
+            <div><span>自主性・主体性</span>がぐんと伸び、<br>難関大学にも合格できました！</div>
+          </h3>
+        </div>
+        <p class="fs13 tar note_mg">※プライバシーに配慮して、画像はイメージです。</p>
+        <div class="relative p30">
+          <p id="voice_txt03" class="voice_txt yellow_bg br15 p30 pt20 fs26 lh16 medium">
+            我が家には発達障がいの診断を受けた大学1年生の息子がおります。幼少期はとても活発で周りのお友達とも元気に交流しておりましたが、小学校高学年になると勉強の遅れや、お友達関係の違和感から支援学級への登校になりました。<br><br>担当の先生についていただいたものの、登校中ずっとという訳にはいかず自習の時間が苦痛だったようで次第に「これなら学校に行く意味がない」「家でも勉強できる」と引きこもるようになりました。<br><br>当時は私も単身赴任中だったため妻からの「今日も学校に行かない」という声にかけられる言葉もなく、夫婦ともに疲れ切っていたように思います。色々と行政で実施されている教育サービスも調べましたが、息子の中で学校や大人に対して不信感が肥大しており、親の声も聞き入れない状態でした。<br><br>中学進学後、このままではいけないと藁をもすがる思いで「不登校専門対応」を謳っておられた御社に問い合わせをしました。最初の電話対応から丁寧で「お父様、様子が類似するお子様も数多くサポートしているので大丈夫ですよ」と温かい言葉をかけていただいたことを今でも覚えています。訪問いただいた専門員の先生も知識が豊富で、「特性をしっかりと理解して、試行錯誤しながら向き合っていくことが大切」や「発達障がい傾向があっても大学進学できる」という言葉に励まされました。<br><br>それから5年近く学研さんでお世話になり続けました。高等学校は先生方にアドバイスをもらいながら、自主性・主体性を伸ばすために寮制度のある不登校・発達障がい対応に強い竹田南高校を紹介していただきました。<br><br>高校進学後は、GWや夏休みで帰ってくる期間だけ先生にお越しいただき、サポートいただきました。高校入学後の最初の数ヶ月は「尻尾を巻いて帰ってくるのでは？」「もし、そうなっても次の進路をゆっくり考えよう」などと妻と相談していたのですが、全くその素振りもなく友達を作って楽しく過ごしておりました。<br><br>高校と御社のサポートもあって、大学は関西学院大学に進学することができました。近場ですが、高校で培った自己管理能力を衰えさせたくなくて、大学のすぐ近くに下宿して独り暮らしさせております。<br><br>本当にあの時、御社に問い合わせをして良かったと感じています。私の職場で、同じように発達障がいのお子さんを持つ後輩にも御社を紹介して、現在受講中ですがその後輩も「本当に助かっている。頼りになっている。」と申しておりました。<br><br>これから家庭教師を検討されている方の参考になれば幸いです。
+          </p>
+          <img id="voice_btn03" class="voice_btn c_img h_img" src="img/voice/btn.svg" alt="">
+          <div id="fadeout03" class="fadeout"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- gblock -->
+  <section class="gBlock dnone">
+    <div class="box ptb30">
+      <h2 class="fs36 tac">
+        <span class="orangeE08">
+          ＼ はじめるなら今がお得！／
+        </span>
+      </h2>
+      <a href="#TabBlock">
+        <div class="relative">
+          <p class="gk77"></p>
+          <p class="gk77_01"></p>
+          <img src="img/gk77.webp" class="w-71" alt="">
+        </div>
+      </a>
+    </div>
+  </section>
+  <section>
+    <div class="box ptb30 lightPink_bg">
+      <h2 class="fs33 brown tac"><span class="speech speech01">資料請求までわずか1分<em>!</em></span></h2>
+      <div class="btnshine">
+        <a class="btn_box btn_box02 h_img white fwb tac mb10" href="#form">
+          <p class="fs33 pl70 bold">資料請求・体験指導のお問い合わせ</p>
+        </a>
+      </div>
+      <img id="lead_img" class="c_img ls-is-cached lazyloaded" data-src="img/lead.webp" src="img/lead.webp">
+    </div>
+  </section>
+  <!-- end gblock -->
+
+  <div id="conversion" class="dnone sp">
+    <section>
+      <div class="box ptb30 lightPink_bg">
+        <h2 class="fs33 brown tac"><span class="speech speech01">資料請求までわずか1分<em>!</em></span></h2>
+        <div class="btnshine">
+          <a class="btn_box btn_box02 h_img white fwb tac mb10" href="#form">
+            <p class="fs33 pl70 bold">資料請求・体験指導のお問い合わせ</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="blockParent pt45 mb45">
+    <p class="fs48 bold tac mb10">
+      <span class="sebrown_txt plr5">
+        保護者様のみなさま、
+      </span><br>
+      こんなお悩みありませんか？
+    </p>
+    <div class="blockParentItem01">
+      <img src="img/blockParentImg01.webp" alt="" class="blockParentImg01">
+      <ul class="fs26 black bold lh25">
+        <li>
+          &nbsp;子どもが
+          <span class="sebrown_txt fs29">
+            グレーゾーンかも？
+          </span>
+          と感じる
+        </li>
+        <li>
+          &nbsp;子どもが
+          <span class="sebrown_txt fs29">
+            発達障がいであると診断
+          </span>
+          された
+        </li>
+        <li>
+          &nbsp;学習の遅れが原因で
+          <span class="sebrown_txt fs29">
+            学校に行かなくなってしまった
+          </span>
+        </li>
+        <li>
+          &nbsp;子どもに合った
+          <span class="sebrown_txt fs29">
+            適切な学習環境がわからない
+          </span>
+        </li>
+        <li>
+          &nbsp;<span class="sebrown_txt fs29">
+            学習の遅れ
+          </span>
+          を少しでも取り戻して進学してほしい
+        </li>
+      </ul>
+    </div>
+    <img src="img/blockParentTriangle.webp" alt="" class="blockParentTriangle">
+    <div class="blockParentItem02">
+      <p class="fs48 bold tac mb10">
+        「どうしてうちの子だけ‥」
+      </p>
+      <img src="img/blockParentImg02.webp" alt="" class="blockParentImg02">
+      <img src="img/blockParentItem02Txt.webp" alt="" class="blockParentItem02Txt">
+    </div>
+  </section>
+  <section class="children">
+    <div class="childrenItem01">
+      <img src="img/childrenItem01txt01.webp" alt="" class="childrenItem01Txt">
+      <img src="img/childrenItem01Img01.webp" alt="" class="childrenItem01Img01">
+      <p class="childrenItem01Note fs14 black regular">
+        ※文部省調査(2022年)より
+      </p>
+      <div class="childrenItem01Img02">
+        <img src="img/childrenItem01Img02.webp" alt="">
+        <img src="img/childrenItem01Triangle.webp" alt="" class="childrenItem01Triangle">
+      </div>
+      <div class="fs32 bold black tac mt35">
+        だから、決して自分のお子様だけだと<br>
+        抱え込む必要はありません。
+      </div>
+    </div>
+    <div class="childrenItem02">
+      <div class="childrenItem02Txt01 fs45 bold black tac">
+        大事なことは、お子様に<br>
+        しっかりと<span class="fs59 seblue">「向き合う」</span>こと。
+      </div>
+      <img src="img/childrenItem02Img01.webp" alt="" class="childrenItem01Img02">
+      <img src="img/childrenItem02Txt02.webp" alt="" class="childrenItem02Txt02">
+      <img src="img/childrenItem02Triangle.webp" alt="" class="childrenItem02Triangle">
+      <img src="img/childrenItem02Txt03.webp" alt="" class="childrenItem02Txt03">
+      <img src="img/childrenItem02Img02.webp" alt="" class="childrenItem01Img02">
+    </div>
+  </section>
+  <section class="arrbg tac mb50">
+    <img src="img/gakken/arrmn.svg" alt="" class="arrmn">
+    <h3 class="tac fs50 orange lh13 mb38">学研の家庭教師に<br>すべておまかせください <i>!</i></h3>
+    <div class="w680 seft-c yellow_bg br15 ptb20 boxPerson">
+      <p class="fs36 seblue bold tac">家庭教師で選ぶなら、学研<i>!</i></p>
+      <p class="fs28 black tac">「学研にしてよかった!」という声、<br>おかげさまで、いま、増えています。</p>
+      <img src="img/gakken/personS.png" alt="">
+    </div>
+  </section>
+  <section id="strong">
+    <div class="box">
+      <h2 class="fs50 lh12 seblue tac mb30">悩みを解決する<br><span class="seblue_txt plr20">学研の家庭教師の5つの強み</span></h2>
+      <p class="fs27 bold tac black mb60">
+        家庭教師なんてどこも同じなんて思っていませんか？<br>
+        いえいえ、学研だからこそできる強みがあります。
+      </p>
+      <div class="seblue_box br15 p20 pt60 pb35 mb70 relative">
+        <img class="strong_ttl c_img" src="img/strong/stTT01.svg" alt="">
+        <div class="tac mb38">
+          <h3 class="fs58 lh1 seblue bold">
+            不登校改善率90％<span class="fs48">を誇る</span><br>
+            <span class="fs35 black">WILL学園と連携</span>
+          </h3>
+        </div>
+        <img class="c_img mb15 w590 relative mb38 strongImg" src="img/strongImg01.webp" alt="">
+        <p class="mb45 fs27 black mt30">
+          <span
+            class="thorange_txt">学研グループが運営するWILL学園は、不登校改善率90%の実績があります。</span>その背景には、発達障がい・不登校のお子様に対し、単なる学習支援ではなく、ゲームやアクティビティなどお子様とのコミュニケーションに比重を置いたサポートを行うことで少しずつ信頼関係を築き、お子様の心を前向きに改善してきた学研独自のメソッドがございます。
+          <br><br>
+          <span
+            class="thorange_txt">それらのメソッドを熟知した優秀な講師陣をご家庭に派遣し、お子様を全力でサポートさせていただきます。</span>指導力はもちろんのこと、お子様との接し方や話し方などの研修も徹底して行っております。
+          <br><br>
+          指導が開始してからも講師からの報告や、ご家庭への細かな電話連絡（場合によっては家庭訪問も行います）など、その後のフォローもしっかり行っておりますのでご安心ください。
+        </p>
+        <img src="img/strong01Will.webp" alt="" class="strong01Will">
+      </div>
+      <div class="seblue_box br15 p20 pt45 pb35 mb70 relative">
+        <img class="strong_ttl c_img" src="img/strong/stTT02.svg" alt="">
+        <div class="tac mb20">
+          <h3 class="fs35 lh12 black bold">
+            <span class="fs48 seblue bold">お子様の進路決定率</span>
+            <span class="fs58 seblue bold">98.8％</span><br>
+            安心の実績
+          </h3>
+        </div>
+        <img class="c_img relative mb25 strongImg" src="img/strongImg02.webp" alt="">
+        <p class="fs27 black mt30 regular">
+          <span class="thorange_txt">
+            発達障がい・不登校のお子様をお持ちの親御様から一番多くご相談されるのは「このままでは高校に進学できないのでは？」というものです。
+          </span><br>
+          義務教育とは違い、高校進学にはお子様の受験意志と試験をクリアしなくてはなりません。
+          <br><br>
+          学研の家庭教師では学力面の指導はもちろんのこと、<span
+            class="thorange_txt">公立・私立高校の普通科受験や単位制、通信制、サポート校に至るまでお子様の状況に合わせた受験情報の提示や対策をとっています。</span>
+          <br><br>
+          公立高校に進学を希望される場合、出席日数が重要となります。ただし、学校に通えないお子様の場合、通わなくても出席扱いとしてもらう方法や、受験時に出席日数を項目として取り扱わない高校も存在します。（※お住まいの都道府県によって異なります。詳しくはお問い合わせください）
+          このような受験情報の収集や受験対策をとることで、不登校のお子様の進学率を高い数字で実現しました。
+          <br><br>
+          過去10年間で750名の不登校のお子様（中学生）が高校受験を迎え、その内741名のお子様が高校進学という目標を達成してきました。<br>
+          また、高校に進学してからのフォローや高校に通えなくなってしまったお子様のフォローも行っております。
+        </p>
+      </div>
+      <div class="seblue_box br15 p20 pt45 pb35 mb70 relative">
+        <img class="strong_ttl c_img" src="img/strong/stTT03.svg" alt="">
+        <div class="tac mb20">
+          <h3 class="fs58 lh12 seblue">
+            <span class="fs35 black tac">
+              発達障がい・不登校のお子様の
+            </span><br>
+            支援ノウハウ<span class="fs48">が</span>豊富
+          </h3>
+        </div>
+        <img class="c_img relative mb25 strongImg" src="img/strongImg03.webp" alt="">
+        <p class="fs27 black mt30">
+          <span class="thorange_txt">
+            不登校改善率90％・進路決定率98.8％を実現している背景には、WILL学園での長年の経験の積み重ねがございます。
+          </span><br><br>
+          これまでに数多くの発達障がい・不登校のお子様と向き合ってきたことで、学習サポートはもちろん、お子様の心やお悩みへのサポートなど、勉強面だけに限らず生活面・精神面のフォローなど多くの経験を重ねてきました。<br>
+          それら現場の経験で培った生のノウハウを活かし、発達障がい・不登校のお子様向けに特化した個別指導の家庭教師サービスをご提供しています。
+        </p>
+      </div>
+      <div class="seblue_box br15 p20 pt45 pb35 mb70 relative">
+        <img class="strong_ttl c_img" src="img/strong/stTT04.svg" alt="">
+        <div class="tac mb20">
+          <h3 class="fs35 lh12 black">
+            WILL学園の講師も多数在籍<br>
+            <span class="fs58 seblue">ピッタリの講師</span><span class="fs48 seblue">をマッチング</span>
+          </h3>
+        </div>
+        <img class="c_img relative mb25 strongImg" src="img/strong04Img.webp" alt="">
+        <p class="fs27 black regular mb45 mt30">
+          <span class="thorange_txt bold">学研の家庭教師はお子様の個性に合ったベストな講師を探し出します。</span><br>
+          ただ単に勉強を見るだけではなく、親御様には話しにくいお子様の悩みや不安にも親身に耳を傾けます。
+          <br><br>
+          勉強ができるだけの講師やお子様の目線に立てない講師は紹介しません。
+          <span class="thorange_txt bold">講師選考の際に大切にしているのは、お子様の状況を理解し一緒に歩むことを約束できるということです。</span><br>
+          優しさと熱意に満ち溢れた講師をご紹介しておりますのでご安心ください。
+          <br><br>
+          まず、お子様と親御様に講師のタイプや性別、年齢等、細かい希望を出していただき専門スタッフがぴったりの講師を紹介します。<br>
+          もし万が一希望に合わない講師だった場合は、即時に新しい講師に変更させていただきますのでご安心ください。<br>
+          講師に対しても細かい研修を徹底しており、勉強の指導力だけではなく、メンタル面のサポート、生活面のサポートに至るまで細かい指導をしています。
+        </p>
+        <div class="strongSliderBox">
+          <h3 class="fs50 seblue ttl">講師のご紹介</h3>
+          <div class="strongSlider">
+            <div class="sliderItem">
+              <img src="img/strongSliderImg01.webp" alt="" class="sliderImg">
+              <div class="sliderContent">
+                <p>
+                  学研の家庭教師の関信二と申します。<br>これまで、のべ80人以上の不登校生や引きこもりのお子さん中心に指導を続けています。その中には、様々な発達障がい、ADHD（注意欠陥・多動性障がい）、LD（学習障がい）、自閉症スペクトラムなどを抱えているお子様もいらっしゃいます。<br><br>発達障がいは、これまで診断によって区分けする方法が主流でしたが、現在では様々な発達障がいや健常者とのグレーゾーンを含めてスペクトラム（連続体）として認識する方法が主流となっています。言い換えるならば、個人個人でそれぞれ障がいのタイプ・特質は様々で「同じものはどれ一つとしてない。」という事になります。<br>
+                </p>
+                <div class="sliderContentMore">
+                  そのため、発達障がいのお子様を指導する場合、まずはその特質や性格、好き嫌いなどをしっかり見る事がとても大切です。診断名はあくまで参考程度として、一人の人間としてしっかり「見る」事を心がけています。<br><br>またもう一つ心がけている事は、「信頼関係の構築」です。発達障がいを抱えているお子様の中には、学校にうまくなじめない、いじめられた、両親との関係性が悪い、など様々なネガティブな感情を持っているお子様も多いのが現状です。最終的なゴールはもちろん、ご家庭によって違うでしょう。「何とか学校に行けるようにしてほしい。」「まずは、昼夜逆転を何とかしたい。」「勉強について行けるようにして欲しい。」などご家庭、年齢によって異なりますが、その目的達成において、土台・基礎となるのが「信頼関係の構築」です。<br>「信頼関係の構築」は、本人に対する本質的な共感・肯定的関心によって育まれます。そのため、まずはしっかり本人の話に耳を傾ける事（傾聴）、場合によっては勉強以外で雑談したり、外に出たり、動画を見たりする事もあります。<br><br>また、様々な事を進めるにあたり、ご両親に対する確認・相談はしっかりするよう心がけています。不登校生によくある事ですが、ご両親とのコミュニケーションが根づまりを起こしており、本人が考えている事とご両親の希望が一致していない事があります。こうした場合、私が仲介役となり根づまりを解消するよう働きかけを行う場合があります。<br>また基本的には、指導後、どのような事をやったのか、お子様の様子はどうか、今後どのような方針で行くか？などの報告・相談は必ず行うようにしています。
+                </div>
+              </div>
+              <button class="btnShowMore">
+                <p>続きを読む</p>
+              </button>
+            </div>
+            <div class="sliderItem">
+              <img src="img/strongSliderImg02.webp" alt="" class="sliderImg">
+              <div class="sliderContent">
+                <p>
+                  私は、授業を通してお子様の「自信や自己肯定感」を育てることを行なっております。<br>私たちが出会うお子様やそのご家族は、一人ひとりが一つひとつ違う悩みを抱えていらっしゃいます。<br><br>また、多くのお子様に共通しているなと感じていることが一つあります。<br>それはお子様が「○○できなければならない」と強く感じてしまっているために、「先回りで不安を抱えてしまい、一歩が踏み出せない」ことです。<br>子どもたちは日々学校で「勉強」「部活」「集団行動や友人関係」「早起き」「さまざまなキャラクターや指導方針の先生」と関わっています。<br>
+                </p>
+                <div class="sliderContentMore">
+                  その学校での時間や環境の中で、子どもたちは小さな挑戦を毎日・毎時間しています。<br>学校登校が難しいお子様というのは、その挑戦の「成果」にこだわりを感じて、自分自身を責めやすい真面目なお子様なのではないでしょうか。<br>私たち学研の家庭教師はそんなお子様と一緒に、家庭教師の授業を通してさまざまなことを体験し、学びます。<br>学習に取り組むためには、先生と子どもの信頼関係が大切です。<br>そのために、子どもの趣味を通して関わるために一緒にゲームをしたり、料理をしたり、お話をしたりします。<br>信頼関係を築いた子どもには家庭教師の時間を通して、「勉強という課題に先生と一緒に挑戦すること」「家族以外の人を信頼することに挑戦すること」を体験していただきます。<br>その体験を私たちは「成功体験」として導きます。<br>成功体験を得た子どもたちは少しずつそれを一人でできるようになってゆきます。<br>そんな成長を応援するのが学研の家庭教師で、私自身の役割だと感じています。
+                </div>
+              </div>
+              <button class="btnShowMore">
+                <p>続きを読む</p>
+              </button>
+
+            </div>
+            <div class="sliderItem">
+              <img src="img/strongSliderImg03.webp" alt="" class="sliderImg">
+              <div class="sliderContent">
+                <p>
+                  発達障がいには主にADHD、ASD、SLDがあり、それぞれの生徒によって特性の程度が違うため、同じ対応はできません。<br>ADHDの可能性があれば、集中が逸れるものを排除する。<br>無理やり話しを止めずに、自分一人が話している状況に気づかせる。<br>ASDの可能性があれば、こちらから相手が好きなものに触れてみて共通の話題を話しながら関係性を構築する。<br>SLDであれば、授業での特別な配慮を許可するなど。<br><br>しかし、どの発達障がいにも言えることとして、変化に弱いことが挙げられるかと思います。<br>
+                </p>
+                <div class="sliderContentMore">
+                  そのため、授業では変則的にならず、機械的に「最初は単語」「次に音読」という枠組みを用意し、この先生の授業の流れは急な変更を求められないという安心感を持ってもらうようにしています。<br><br> 「プラスの声掛け」も行っております。<br>例えば、英単語で１０問中３問でもできていれば、「3問もできてるね！頑張ってるね！」。<br>普段はうるさくなりがちな生徒がプリントワークをちゃんとしたなら「よく頑張ったね！その調子！」といった具合です。<br><br>心の距離が近くなるにつれて相手から話しかけられる、相談されるということもあります。<br>その場合、否定せず、肯定せず、「傾聴」を心がけております。<br>もちろん、家庭環境や人間関係など重たい話題の場合もあります。<br>その場合は、自己の判断で動かず、上司や両親、心療内科やカウンセラー等へ相談を仰ぎながら、グループを形成して動くようにしています。<br><br>今までの育った環境から発言が常にネガティブになりがちな、いわゆる「認知のゆがみ」のある生徒も多く居ます。<br>ネガティブな話しを聞いていると生徒のマイナス感情に飲み込まれることもあるでしょう。<br>そういった場合には、自分自身の心のケアを維持するためにも、カウンセリングに通い、生徒だけではなく、私自身も常に心や精神のあり方を学び続けております。
+                </div>
+              </div>
+              <button class="btnShowMore">
+                <p>続きを読む</p>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="seblue_box br15 p20 pt45 pb35 mb70 relative">
+        <img class="strong_ttl c_img" src="img/strong/stTT05.svg" alt="">
+        <div class="tac mb20">
+          <h3 class="fs35 lh12 black">
+            お子様の個性に寄り添った<br>
+            <span class="fs58 seblue">完全オーダーメイド<span class="fs48">の授業</span></span>
+          </h3>
+        </div>
+        <img class="c_img relative mb25 strongImg" src="img/strongImg05.webp" alt="">
+        <p class="fs27 black regular pt10">
+          学研の家庭教師では、お子様の個性に合わせて細かなサポートを行います。<br><br>
+          一言で発達障がい・不登校といってもその原因や期間は様々です。
+          <span class="thorange_txt bold">
+            学研の家庭教師では、お子様を決まった型にはめ込むのではなく、一人ひとりに合わせたオーダーメイドでの講師選抜や研修、指導方針、接し方など徹底して取り組んでいます。
+          </span>
+          <br><br>
+          また、お子様一人ひとりに目標も設定し、講師とともに達成する喜びを伝えていくようにしています。「遅れている分を取り戻したい」「学校に通えるようになりたい」「高校進学をしたい」「人と話すのが苦手になってしまい、その克服をしたい」などその目標もお子様によって様々ですが、ご心配の点は気軽にご相談ください。
+        </p>
+        <div class="strong05Example">
+          <div class="strong05ExampleTtl fs36 bold">
+            オーダーメイド授業の一例
+          </div>
+          <img src="img/strong05ExImg01.webp" alt="" class="strong05ExImg01">
+          <div class="strongExItem brownD6C_bg">
+            <div class="strongExItemNum fs30 bold tac white">
+              1<span class="fs26">ヶ</span>月目
+            </div>
+            <div class="strongExItemCnt fs27 regular">
+              まずは講師がゲームを一緒にやることで、少しずつ心の距離を縮めていき、ゲームの会話の合間に少しずつ「本当は学校に行きたい」などといった本音や悩みを打ち明けるように。
+            </div>
+          </div>
+          <div class="strongExItem brownC2A_bg">
+            <div class="strongExItemNum fs30 bold tac white">
+              2<span class="fs26">ヶ</span>月目以降
+            </div>
+            <div class="strongExItemCnt fs27 regular">
+              小学校の復習からじっくりとやっていき、特に苦手な数学を重点的に指導。<br>
+              時折、小学校の復習をしていることに対する劣等感を感じている様子が見受けられたので、メンタルケアもしっかりと行いながら前向きに学習に取り組めるようにサポート。
+            </div>
+          </div>
+          <div class="strongExItem strongExItem02 orange_bg">
+            <div class="strongExItemNum fs30 bold tac white">
+              6<span class="fs26">ヶ</span>月目（現在）
+            </div>
+            <div class="strongExItemCnt fs27 regular">
+              目標設定をシンプルかつ長期的な視野をもって取り組むように指導を進めることで自信を取り戻し、少しずつ学校にも通い始め、高校進学にも前向きに。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="box arrbg mb45">
+      <h2 class="fs50 tac mb38 lh13 seorange">だから、<br>学研の家庭教師は<br><span
+          class="seblue_txt white plr20 lh12">選ばれ続けています<i>!</i></span></h2>
+      <div class="w630 c_img yellow_bg ptb20 tac br12">
+        <p class="fs24 lh15">まずは、資料請求からはじめてみませんか？<br>早く始めれば始めるほど、大きく差は開きます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- gblock -->
+  <section class="gBlock dnone">
+    <div class="box ptb30">
+      <h2 class="fs36 tac">
+        <span class="orangeE08">
+          ＼ はじめるなら今がお得！／
+        </span>
+      </h2>
+      <a href="#TabBlock">
+        <div class="relative">
+          <p class="gk77"></p>
+          <p class="gk77_01"></p>
+          <img src="img/gk77.webp" class="w-71" alt="">
+        </div>
+      </a>
+    </div>
+  </section>
+  <section>
+    <div class="box ptb30 lightPink_bg">
+      <h2 class="fs33 brown tac"><span class="speech speech01">資料請求までわずか1分<em>!</em></span></h2>
+      <div class="btnshine">
+        <a class="btn_box btn_box02 h_img white fwb tac mb10" href="#form">
+          <p class="fs33 pl70 bold">資料請求・体験指導のお問い合わせ</p>
+        </a>
+      </div>
+      <img id="lead_img" class="c_img ls-is-cached lazyloaded" data-src="img/lead.webp" src="img/lead.webp">
+    </div>
+  </section>
+  <!-- end gblock -->
+  <section id="course">
+    <div class="box ptb60">
+      <h2 class="ttl fs50 seblue tac mb30">コース一覧・料金</h2>
+      <div class="w650 seft-c yellow_bg black seorange_box ptb10 br15 fs30 bold tac lh12">
+        <p class="seorange_txt lh13 plr5 mb5 dsbl">
+          学研の家庭教師は、安心の『月謝制』。
+        </p>
+        <p>
+          高額教材のセット販売などもございません。
+        </p>
+      </div>
+      <ul>
+        <li class="mb15 mt30 sec p30 br15 grey_bg">
+          <div class="w330">
+            <h3 class="course_ttl02 fs33 white tac mb25 mt30">
+              発達支援・不登校支援<br>
+              専門コース
+            </h3>
+            <p class="ptb2 fs28 lh40 tac seblue_box seblue white_bg bold">
+              1時間 5,170
+              <span class="fs22">円（税込）～</span>
+            </p>
+          </div>
+          <img class="w307" src="img/course/img01.png" alt="">
+          <p class="fs26 mt15 medium black">
+            お子様たちの目標は「学校に復帰したい」、「高校受験に合格したい」、「基礎学力をつけたい」、「社会性を身につけたい」など様々です。<br>
+            そういった目標に合わせて、一人ひとりに合った計画やプランを考え、お子様と共に実践していきます。
+          </p>
+        </li>
+      </ul>
+      <p class="fs20 tac medium black">
+        ※授業内容のご要望により、料金は変動いたします。<br>
+        ※オンライン授業の料金は上記と異なります。詳細はお問合せください。
+      </p>
+    </div>
+  </section>
+
+  <div class="w650 seft-c yellow_bg black seorange_box ptb20 br15 fs30 bold tac lh12">
+    <p class="fs24 mb5">
+      一人ひとりにベネフィットする教育を可能にするために
+    </p>
+    <p class="seorange_txt lh13 plr5 dsbl">
+      「学研」の家庭教師は講師の質にこだわります
+    </p>
+  </div>
+
+  <section class="circleChart mt35 mb60">
+    <img src="img/gakken/circleChart.webp" alt="">
+    <p class="w650 fs27 lh14 black medium">
+      「すべては子どもたちのために」それが私たち、学研・塾グループ共通の想いです。<br>
+      そして、子どもたちに直に接するのは、先生 ― つまり講師。登録数10万人超の豊富な講師陣から多様なニーズに対応します。
+    </p>
+  </section>
+
+  <!-- gblock -->
+  <section class="gBlock dnone">
+    <div class="box ptb30">
+      <h2 class="fs36 tac">
+        <span class="orangeE08">
+          ＼ はじめるなら今がお得！／
+        </span>
+      </h2>
+      <a href="#TabBlock">
+        <div class="relative">
+          <p class="gk77"></p>
+          <p class="gk77_01"></p>
+          <img src="img/gk77.webp" class="w-71" alt="">
+        </div>
+      </a>
+    </div>
+  </section>
+  <section>
+    <div class="box ptb30 lightPink_bg">
+      <h2 class="fs33 brown tac"><span class="speech speech01">資料請求までわずか1分<em>!</em></span></h2>
+      <div class="btnshine">
+        <a class="btn_box btn_box02 h_img white fwb tac mb10" href="#form">
+          <p class="fs33 pl70 bold">資料請求・体験指導のお問い合わせ</p>
+        </a>
+      </div>
+      <img id="lead_img" class="c_img ls-is-cached lazyloaded" data-src="img/lead.webp" src="img/lead.webp">
+    </div>
+  </section>
+  <!-- end gblock -->
+  <section id="blockStep">
+    <div class="m_box pt60 pb60">
+      <h2 class="ttl fs50 seblue tac mb60">体験指導までの流れ</h2>
+      <div class="step_box br15 p30 pt45 mb60 br15 relative">
+        <img class="strong_ttl c_img lazyloading" data-src="img/step/ttl01.svg" loading="lazy" src="img/step/ttl01.svg">
+        <h3 class="fs46 seorange tac mb10">電話もしくはWEBでご予約</h3>
+        <img class="c_img mb30 lazyload" data-src="img/step/img01.png" loading="lazy">
+        <p class="fs27 lh13 tac mb30 black medium">
+          まずは、ご予約をお願いいたします。申し込みフォーム、またはお電話でお気軽にお問い合わせください。ご相談やご質問なども受け付けております。
+        </p>
+        <hr class="mb30">
+        <!-- <p class="fs20 bold lh16 tac mb15 black">申し込みフォーム、またはお電話でお気軽にお問い合わせください。<br>ご相談やご質問なども受け付けております。</p> -->
+        <ul class="sec aic">
+          <li><a href="tel:0120351056" class="aTagTel"><span>0120-351056</span><img id="step_tel" class="h_img lazyload"
+                data-src="img/step/tel.webp" alt="0120-351-056"></a></li>
+          <li><a href="#form" class="h_img hfBtnLar"><span>体験指導のお問い合わせ</span><img id="step_btn" class="lazyload"
+                data-src="img/step/btn.svg"></a></li>
+        </ul>
+      </div>
+      <div class="step_box br15 p30 pt45 br15 relative">
+        <img class="strong_ttl c_img lazyloading" data-src="img/step/ttl02.svg" loading="lazy" src="img/step/ttl02.svg">
+        <h3 class="fs46 seorange tac mb10">カウンセリングと<br>体験指導</h3>
+        <p class="fs28 bold seorange tac mb10">
+          （トータル所要時間：約60分）
+        </p>
+        <img class="c_img mb30 lazyload" data-src="img/step/img02.png" loading="lazy">
+        <p class="fs27 lh13 tac mb30 black medium">大切なのは、家庭教師というスタイルがお子様<br>に合っているかをしっかり判断することです。<br><span
+            class="orange bold">「自分に合った勉強のやり方」をみつけることが<br>成果につながります。</span><br>まずは家庭教師の雰囲気を味わっていただき、<br>お子様の反応を見てください。<br><br><span
+            class="fs22">※当日のお子様の調子によって、「体験指導」を<br>お子様や保護者の方からのヒアリングなどに切り替えるこ<br>ともできます。</span>
+        </p>
+        <hr class="mb30">
+        <h4 class="fs35 orange tac mb30">学研の家庭教師体験レッスンの<br><span id="step02_ttl" class="fs50 dib">3つのポイント</span></h4>
+        <ul id="step02_li">
+          <li class="fs28 bold seblue mb15 lh12">
+            ❶&nbsp;お子様の現在の実力がわかります
+          </li>
+          <li class="fs28 bold seblue mb15 lh12">
+            ❷&nbsp;お子様にぴったりの勉強方法が見つかります
+          </li>
+          <li class="fs28 bold seblue mb30 lh12">
+            ❸&nbsp;今までの家庭教師との違いがわかります
+          </li>
+        </ul>
+        <div class="black_box p15 fs24 lh13 tac black">
+          体験授業を受講したからと言って、<br>
+          ご入会を強くおすすめすることはありませんので、<br>
+          ご安心ください。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="yellow_bg">
+    <div class="box pt45 pb60">
+      <h2 class="ttl fs46 seblue tac mb30">よくあるご質問</h2>
+      <p class="fs18 bold tac mb45">大切なお子様の勉強方法ですから不安なことも多いはずです。<br>その他、ご不明な点などございましたら、お気軽にお問い合わせください。</p>
+      <ul class="sec">
+        <li class="mb10"><a class="faq_btn fs22 bold white tac" href="#faq01">成績についてのご質問</a></li>
+        <li class="mb10"><a class="faq_btn fs22 bold white tac" href="#faq02">家庭教師についてのご質問</a></li>
+        <li><a class="faq_btn fs22 bold white tac" href="#faq03">学び方についてのご質問</a></li>
+        <li><a class="faq_btn fs22 bold white tac" href="#faq04">弊社についてのご質問</a></li>
+      </ul>
+      <h3 id="faq01" class="faq_ttl fs32 white mb30 mt45">成績についてのご質問</h3>
+      <div class="accordion_box p30 mb30">
+        <h3 class="faq_q fs26 seblue">ほんとうに成績は上がりますか？</h3>
+        <p class="faq_a fs22">
+          学研の家庭教師は、教務部に対して毎月の報告を義務付けております。「指導報告書」「定期ミーティング」「個別ミーティング」のシステムにより、お子様の指導状況をチェックし、目標達成までの学習管理を教務部のバックアップにより綿密に行いますので自主学習の習慣と共に学力が向上していきます。
+        </p>
+      </div>
+      <div class="accordion_box p30 mb30">
+        <h3 class="faq_q fs26 seblue">受験対策は大丈夫ですか？<br>1対1だと競争心がなくなったりはしませんか？</h3>
+        <p class="faq_a fs22">弊社は、受験対策として模擬テストをおすすめしており、 夏期講習・冬期講習も一部教務センターにて実施しております。
+          偏差値や志望校到達率の把握や単元別の習熟度チェックから、テスト慣れ、 会場慣れに至るまで、受験生のサポートはお任せください。</p>
+      </div>
+
+      <h3 id="faq02" class="faq_ttl fs32 white mb30 mt45">家庭教師についてのご質問</h3>
+      <div class="accordion_box p30 mb30">
+        <h3 class="faq_q fs26 seblue">家庭教師は、アルバイト感覚ではありませんか？</h3>
+        <p class="faq_a fs22">
+          弊社では多くの登録希望家庭教師の中から、学力だけでなく指導力や責任感等の家庭教師としての適正検査「YGPI」を実施して合否を決めております。紹介後も日々の指導状況から毎月の指導報告を義務付けるなど、しっかりとした管理をしておりますのでご安心ください。
+        </p>
+      </div>
+      <div class="accordion_box p30 mb30">
+        <h3 class="faq_q fs26 seblue">本人との相性は合うのでしょうか？</h3>
+        <p class="faq_a fs22">要望や条件を詳しくお伺いし、専門のスタッフが選考にあたり、
+          ミーティングをした上で紹介しておりますので安心です。弊社は30年以上の実績により家庭教師の登録数も豊富なので、お子様にピッタリの家庭教師を紹介できるシステムとなっております。</p>
+      </div>
+      <div class="accordion_box p30 mb30">
+        <h3 class="faq_q fs26 seblue">家庭教師交代、進路相談などはできるのでしょうか？</h3>
+        <p class="faq_a fs22">
+          大丈夫です。何かありましたら、すぐに弊社へご連絡ください。教務部による管理体制を整えておりますので、担当社員・スタッフが迅速に対応いたします。家庭教師個人ではまかなえないことを全て教務部でサポートさせていただきます。
+        </p>
+      </div>
+
+      <h3 id="faq03" class="faq_ttl fs32 white mb30 mt45">学び方についてのご質問</h3>
+      <div class="accordion_box p30 mb30">
+        <h3 class="faq_q fs26 seblue">特別な教材を購入しないといけないのですか？</h3>
+        <p class="faq_a fs22">弊社は、高額教材のローン契約による販売などは一切ありません。 お子様がお持ちの教科書等で指導を行うことができます。</p>
+      </div>
+      <div class="accordion_box p30 mb30">
+        <h3 class="faq_q fs26 seblue">勉強部屋がないのですが？</h3>
+        <p class="faq_a fs22">ご安心ください。リビングなどでも指導は可能です。また、自宅以外の場所で授業を希望される場合には、近隣の公共施設や家庭教師宅指導もございます。まずは一度ご相談ください。</p>
+      </div>
+
+      <h3 id="faq04" class="faq_ttl fs32 white mb30 mt45">弊社についてのご質問</h3>
+      <div class="accordion_box p30 mb30">
+        <h3 class="faq_q fs26 seblue">テスト前の短期間だけでも申し込みできますか？</h3>
+        <p class="faq_a fs22">テスト前や、夏休みだけなどの短期間もお任せください。目的に応じた指導計画を立て、集中特訓を組むことができます。</p>
+      </div>
+      <div class="accordion_box p30 mb30">
+        <h3 class="faq_q fs26 seblue">病気で休んだり、用事で休んだりすると授業料はどうなりますか？</h3>
+        <p class="faq_a fs22">休んでしまった場合はその分の振替授業を行えます。それによって別途料金がかかることもございません。</p>
+      </div>
+      <div class="accordion_box p30">
+        <h3 class="faq_q fs26 seblue">やめたくても簡単にやめられないのではないですか？</h3>
+        <p class="faq_a fs22">弊社は1ヶ月前までに退会の申し出をいただければ、 いつでも退会することができます。その場合解約料は必要ありません。
+          また、退会申告できない場合であっても、1ヶ月分の指導料より高いお金はいただきません。 もちろん、保証金等もございません。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="form">
+    <div class="m_box ptb60">
+      <h2 class="ttl ttl01  fs50 green tac mb30">
+        <span class="ttdr">お問い合わせ</span>
+      </h2>
+      <form action="./confirm.html" method="post" name="input_fm" id="form-name" novalidate="">
+          <input type="hidden" id="tmp_x">
+          <input type="hidden" name="token" value="<?php _h(Token::value()); ?>" />
+          <?php include __DIR__.'/index.form_inner.php'; ?>
+      </form>
+    </div>
+  </section>
+
+  <div id="footer_on">
+    <div class="box ptb30">
+      <ul class="flex jcc aic">
+        <li><img id="f_logo01" class="lazyload" data-src="img/header/logo.webp"></li>
+        <li><img id="f_logo02" class="lazyload" data-src="img/footer/logo02.svg"></li>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="box tac ptb30 fs14">
+      <nav class="footer-nav">
+        <a href="https://www.kame.co.jp/privacy/" target="_blank" class="footer-nav-item">プライバシーポリシー
+        </a>
+        <a href="https://www.gakken-lstaffing.jp/corporate/" target="_blank"
+          class="footer-nav-item footer-nav-item02">会社概要</a>
+        <a href="https://www.kame.co.jp/policy/" target="_blank" class="footer-nav-item">特定商取引法に基づく表記</a>
+      </nav>
+      <p class="copyright">Copyright © 2024 学研 エル・スタッフィング. All Rights Reserved.</p>
+    </div>
+  </footer>
+</div>
+
+<!-- JS -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<!-- 画像遅延読み込み -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/plugins/unveilhooks/ls.unveilhooks.min.js"></script>
+<!-- Slick -->
+<script src="lib/slick/slick.js"></script>
+<script src="lib/lightbox/js/lightbox.js"></script>
+<script src="lib/colorbox/jquery.colorbox.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Noto Serif JP:300,400,500,600,700,900', 'Noto Sans JP:300,400,500,600,700,900']
+    }
+  });
+</script>
+<!-- Setup -->
+<script src="js/setup.js" defer></script>
+<?php include __DIR__.'/index.js.php'; ?>
+</body>
+
+</html>

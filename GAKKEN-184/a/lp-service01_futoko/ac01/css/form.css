@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/*----- form -----*/
+table {text-align: left;}
+th, td {
+  display: block;
+}
+.bgon li, .fl_l li, .sebx li {
+  display: inline-block;
+}
+.f_bb {
+  border-bottom: 0.1rem solid #CCC;
+  padding: 0 0 0.8rem 0;
+  margin: 0 0 2.4rem 0;
+}
+.colSmallSize {display: inline-block;}
+.hs {
+  display: inline-flex;
+  width: 8.2rem;
+  height: 3.45rem;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin: 0 1rem;
+  font-size: 2.48rem;
+  font-weight: bold;
+  font-style: normal;
+  border-radius: 0.8rem;
+  position: relative;
+  top: -0.2rem;
+  justify-content: center;
+  align-items: center;
+  background: #EA8000;
+}
+input[type=text], input[type=tel], select, textarea {
+  vertical-align: bottom;
+  box-sizing: border-box;
+  border: 1px solid #CCC;
+  border-radius: 0.9rem;
+  height: 6.4rem;
+  line-height: 6.4rem;
+  width: 65rem;
+  padding: 0 2rem;
+  font-size: 2.8rem;
+}
+select {
+  max-width: 65rem;
+  width: inherit;
+  color: #333;
+  background: #ffffff;
+}
+textarea {
+  line-height: 4.6rem;
+  height: 20rem;
+  padding: 2rem;
+}
+input[type=checkbox] {
+  display: none;
+}
+.checkbox01 {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 2rem 0.5rem 4rem;
+  position: relative;
+  width: auto;
+  font-size: 3.38rem;
+}
+.checkbox01::before {
+  background: #fff;
+  border: 0.12rem solid #ACACAC;
+  content: '';
+  display: block;
+  width: 2.8rem;
+  height: 2.8rem;
+  left: 0;
+  margin-top: -1.6rem;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 50%;
+}
+.checkbox01::after {
+  border-right: 0.6rem solid #EA8000;
+  border-bottom: 0.6rem solid #EA8000;
+  content: '';
+  display: block;
+  height: 1.5rem;
+  left: 1rem;
+  margin-top: -1.2rem;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 0.6rem;
+}
+input[type=checkbox]:checked + .checkbox01::after {
+  opacity: 1;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+
+
+#form th {
+	font-size: 3.3rem;
+}
+
+@media screen and (min-width:600px) {
+}
+
+@media screen and (max-width:599px) {
+}

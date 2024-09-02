@@ -1,0 +1,148 @@
+@charset "utf-8";
+/*----- faq -----*/
+.faq_btn {
+  display: block;
+  width: 35rem;
+  height: 8.3rem;
+  line-height: 8.3rem;
+  text-decoration: none;
+  background: url(../img/faq/btn.svg) no-repeat center top, url(../img/faq/btn_h.svg) no-repeat center top; /* 予めhover時の画像を読み込むことでチラつき防止 */
+  background-size: cover;
+}
+
+.faq_btn:hover {
+  background: url(../img/faq/btn_h.svg) no-repeat center top;
+  background-size: cover;
+}
+
+.faq_btn.active {
+  background: url(../img/faq/btn_h.svg) no-repeat center top;
+  background-size: cover;
+}
+
+.faq_ttl {
+  background: #151E42 url(../img/faq/ttl.svg) no-repeat 3rem center;
+  background-size: 1rem;
+  border-radius: 0.9rem;
+  padding: 1.7rem 2rem 1.7rem 5rem;
+}
+
+.accordion_box {
+  border: 0.1rem solid #151E42;
+  background: #FFF;
+  margin-right: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0 #00000026;
+}
+/*アコーディオンタイトル*/
+.faq_q {
+  cursor: pointer;
+  padding: 0 2rem 0 5rem;
+  position: relative;
+}
+.faq_q::before {
+  content: "";
+  display: block;
+  width: 4.2rem;
+  height: 4.2rem;
+  background: url(../img/faq/q.svg) no-repeat center top;
+  background-size: 4.2rem;
+  position: absolute;
+  top: calc(50% - 2.1rem);
+  left: 0;
+}
+/*アコーディオンで現れるエリア*/
+.faq_a {
+  display: none;/*はじめは非表示*/
+  background: #FFF;
+  padding: 2rem 0 0 5rem;
+  margin-top: 2rem;
+  position: relative;
+  border-top: 0.1rem solid #151E42;
+}
+.faq_a::before {
+  content: "";
+  display: block;
+  width: 4.2rem;
+  height: 4.2rem;
+  background: url(../img/faq/a.svg) no-repeat center top;
+  background-size: 4.2rem;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+}
+
+/*アイコンの＋と×*/
+.faq_q::after {
+    position: absolute;
+    content:'';
+    width: 0.8rem;
+    height: 1.4rem;
+    top: calc(50% - 0.4rem);
+    right: 0;
+    background: url(../img/faq/arw.svg) no-repeat center top;
+    background-size: contain;
+    transition: 0.3s;
+}
+/*　closeというクラスがついたら形状変化　*/
+.faq_q.close::after {
+  transform: rotate(90deg);
+}
+
+
+/*----- footer_on -----*/
+#footer_on {
+  background: url(../img/footer/bg.svg) no-repeat center top;
+  background-size: contain;
+}
+#footer_on .flex li {
+  margin: 0 1.5rem;
+}
+#f_logo01 {
+  width: 20rem;
+}
+#f_logo02 {
+  width: 23.2rem;
+}
+/* footer */
+#footer_on {
+	background: url(../img/footerTopBg.webp) no-repeat center top;
+	background-size: contain;
+}
+
+#footer_on .flex li {
+	margin: 0 1.5rem;
+}
+
+#f_logo01 {
+	width: 20rem;
+}
+
+#f_logo02 {
+	width: 23.2rem;
+}
+
+.footer-nav-item02 {
+	padding: 0 2rem;
+	border-left: .1rem solid #fff;
+	border-right: .1rem solid #fff;
+}
+
+footer {
+	background: #3E3A39;
+	color: #fff;
+}
+
+footer a {
+	display: inline-block;
+	margin: 0 1rem 2rem;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* end footer */
+@media screen and (min-width:600px) {
+  .sp {display: none !important;}
+}
+
+@media screen and (max-width:599px) {
+}
