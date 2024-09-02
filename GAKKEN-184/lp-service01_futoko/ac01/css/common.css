@@ -358,6 +358,43 @@ mark:after {
 .italic {font-style: italic;}
 .dsbl {display: inline-block;}
 
+.speech {
+  position: relative;
+  z-index: 1;
+  line-height: 1;
+  padding: 0 3rem;
+}
+.speech::before, .speech::after {
+  content: "";
+  position: absolute;
+  bottom: 0.6rem;
+  width: 1.8rem;
+  height: 3.7rem;
+  z-index: -1;
+}
+.speech::before {
+  left: 0;
+}
+.speech::after {
+  right: 0;
+}
+.speech01::before {
+  background: url(../img/common/speech01_l.svg) no-repeat center center;
+  background-size: cover;
+}
+.speech01::after {
+  background: url(../img/common/speech01_r.svg) no-repeat center center;
+  background-size: cover;
+}
+.speech02::before {
+  background: url(../img/common/speech02_l.svg) no-repeat center center;
+  background-size: cover;
+}
+.speech02::after {
+  background: url(../img/common/speech02_r.svg) no-repeat center center;
+  background-size: cover;
+}
+
 @media screen and (max-width:749px) {
   html {
     font-size: 1.33333vw

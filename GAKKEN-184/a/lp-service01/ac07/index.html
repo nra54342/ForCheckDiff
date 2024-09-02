@@ -1,6 +1,7 @@
 <?php
 include __DIR__.'/index.php';
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -20,31 +21,39 @@ include __DIR__.'/index.php';
   <link rel="preload" href="css/form.min.css?date=20220615" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="css/modal.min.css?date=20220615" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-<!-- <?php
+  <!-- <?php
 /*
 <link rel="stylesheet" href="/entry/validationEngine.jquery.css">
 */
 ?> -->
-<style type="text/css">
-.error_field{background-color:#ffdede;}
-.error_text{color:red;}
-</style>
+  <style type="text/css">
+    .error_field {
+      background-color: #ffdede;
+    }
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NH6KGWC');</script>
-<!-- End Google Tag Manager -->
+    .error_text {
+      color: red;
+    }
+  </style>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NH6KGWC');</script>
+  <!-- End Google Tag Manager -->
 
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH6KGWC"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH6KGWC" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div id="container">
     <div id="header">
       <div class="box">
@@ -87,8 +96,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
     <p class="fs10 black note90">※実施委託先：日本ビジネスリサーチ/調査期間：2023年2月22日～2月23日/調査方法：サービス情報を閲覧した上でのWEB上イメージ調査<br>
-調査対象：家庭教師サービスに興味があり塾または家庭教師サービスを利用したことがあるお子様をお持ちの保護者の方 331名</p>
-
+      調査対象：家庭教師サービスに興味があり塾または家庭教師サービスを利用したことがあるお子様をお持ちの保護者の方 331名</p>
+    <section class="mb20 mt30">
+      <img src="img/scampaign/ttl.svg" class="scampaign_ttl" alt="夏からの勉強は、学研にすべておまかせください！">
+      <div class="scampaign">
+        <img src="img/scampaign/img01.svg" class="scampaign_img01 c_img"
+          alt="お子さまだけの目標やタイプに合わせた 学習指導プラン作成＆体験授業を学年ごとに毎月先着20名様限定で実施!">
+        <img class="scampaign_content c_img mb30" src="img/scampaign/content.webp" alt="">
+        <img class="scampaign_parents c_img mb10" src="img/scampaign/parents.webp" alt="">
+        <h2 class="fs36 orange tac mb10"><span class="speech speech02">資料請求までわずか1分<em>!</em></span></h2>
+        <a class="btn_box h_img fs28 white fwb tac mb10" href="#form">資料請求・体験指導のお問い合わせ（無料）</a>
+      </div>
+    </section>
     <section class="grey_bg dnone">
       <div class="box ptb30">
         <h2 class="fs36 green tac"><span class="speech speech01">はじめるなら今がお得<em>!</em></span></h2>
@@ -101,13 +120,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
       </div>
     </section>
-    <section>
+    <!-- <section>
       <div class="box ptb30">
         <h2 class="fs36 orange tac"><span class="speech speech02">資料請求までわずか1分<em>!</em></span></h2>
         <a class="btn_box h_img fs28 white fwb tac mb10" href="#form">資料請求・体験指導のお問い合わせ（無料）</a>
         <img id="lead_img" class="c_img" src="img/lead/img.webp">
       </div>
-    </section>
+    </section> -->
     <!-- <section id="TabBlock" class="box cusTabGroup">
       <div class="relative">
         <p class="gk77_01"></p>
@@ -155,7 +174,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>
                   もともと公立高校への進学を希望していた我が家なので、内申点の大切さは知っており、そこを重要視している学研さんにとても好感をもちました。我が家にとって決して安い費用ではありませんが、
                   <span>娘も学研さんの体験指導が一番よかったという感想でしたのでおまかせしてみることにしました。</span>
-                <p class="txtHidden">学研さんで家庭教師を初めてから最初の期末テストは講師の方の指示通り反復学習を行いました。娘も部活で疲れていたとは思いますが、「やる」といった以上、頑張っていたように思います。
+                <p class="txtHidden">
+                  学研さんで家庭教師を初めてから最初の期末テストは講師の方の指示通り反復学習を行いました。娘も部活で疲れていたとは思いますが、「やる」といった以上、頑張っていたように思います。
                   <span>本当に指示通りのことしかできていなかったと思いますが、主要5教科の点数がなんと100点以上もアップ。</span>本当にびっくりしました。<span>娘は「学校のワークの使い方がわかった。先生が励ましてくれて最後までできた」と大喜び。</span>自信もつけたようで、あのとき学研さんを選んで本当によかったね、と親子で喜んでおります。
                 </p>
                 <button id="showMore02" class="showMore showMore02">続きを読む</button>
@@ -172,7 +192,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>
                   最後まで自分のやりたいこと実現したい気持ちをもって諦めなかった結果、合格を勝ち取ることができました。
                 </p>
-                <p class="mt55">毎日必ずやったことは数Ⅲの計算、化学の有機無機の暗記、英単語です。この3つは毎日やって成果がでてくると考えています。このように<span>毎日やるべきことを今の状況を踏まえて家庭教師の先生と一緒に作戦を立てることで継続することができます。</span>家庭教師は個々に合った受験情報の提供や指導方針を定めてくれるところが魅力であると考えています。最大限家庭教師を利用して志望合格のサポートとして使ってほしいです。</p>
+                <p class="mt55">
+                  毎日必ずやったことは数Ⅲの計算、化学の有機無機の暗記、英単語です。この3つは毎日やって成果がでてくると考えています。このように<span>毎日やるべきことを今の状況を踏まえて家庭教師の先生と一緒に作戦を立てることで継続することができます。</span>家庭教師は個々に合った受験情報の提供や指導方針を定めてくれるところが魅力であると考えています。最大限家庭教師を利用して志望合格のサポートとして使ってほしいです。
+                </p>
                 <!-- <button id="showMore03" class="showMore showMore03">続きを読む</button> -->
               </div>
             </div>
@@ -569,10 +591,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2 class="ttl ttl01 fs50 green tac mb30">お問い合わせ</h2>
 
         <form action="./confirm.html" method="post" name="input_fm" id="form-name" novalidate="">
-<input type="hidden" id="tmp_x">
-<input type="hidden" name="token" value="<?php _h(Token::value()); ?>" />
+          <input type="hidden" id="tmp_x">
+          <input type="hidden" name="token" value="<?php _h(Token::value()); ?>" />
 
-<?php include __DIR__.'/index.form_inner.php'; ?>
+          <?php include __DIR__.'/index.form_inner.php'; ?>
         </form>
 
       </div>
@@ -599,36 +621,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <!-- JS -->
-<!-- <?php /*
+  <!-- <?php /*
   <script src="js/jquery-1.12.4.js" defer></script>
 */
 ?> -->
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/jquery-1.12.4.js" defer></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery-1.12.4.js" defer></script>
 
-<!-- 画像遅延読み込み -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/plugins/unveilhooks/ls.unveilhooks.min.js"></script>
-<!-- Slick -->
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer>
-</script>
-<!-- Setup -->
-<script src="js/settings.min.js" defer></script>
-<script src="js/setup.min.js" defer></script>
-<script src="js/custom.js" defer></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10707598-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- 画像遅延読み込み -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/plugins/unveilhooks/ls.unveilhooks.min.js"></script>
+  <!-- Slick -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer>
+  </script>
+  <!-- Setup -->
+  <script src="js/settings.min.js" defer></script>
+  <script src="js/setup.min.js" defer></script>
+  <script src="js/custom.js" defer></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10707598-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-10707598-1');
-  gtag('config', 'AW-1046713053');
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics end -->
+    gtag('config', 'UA-10707598-1');
+    gtag('config', 'AW-1046713053');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics end -->
 
-<?php include __DIR__.'/index.js.php'; ?>
+  <?php include __DIR__.'/index.js.php'; ?>
 </body>
+
 </html>

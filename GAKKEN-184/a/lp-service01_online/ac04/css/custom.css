@@ -826,3 +826,98 @@ a.aTagTel span {
     left: 4rem;
     top: -0.6rem;
 }
+
+.speech {
+	position: relative;
+	z-index: 1;
+	line-height: 1;
+	padding: 0 3rem;
+  }
+  .speech::before, .speech::after {
+	content: "";
+	position: absolute;
+	bottom: 0.6rem;
+	width: 1.8rem;
+	height: 3.7rem;
+	z-index: -1;
+  }
+  .speech::before {
+	left: 0;
+  }
+  .speech::after {
+	right: 0;
+  }
+  .speech01::before {
+	background: url(../img/common/speech01_l.svg) no-repeat center center;
+	background-size: cover;
+  }
+  .speech01::after {
+	background: url(../img/common/speech01_r.svg) no-repeat center center;
+	background-size: cover;
+  }
+  .speech02::before {
+	background: url(../img/common/speech02_l.svg) no-repeat center center;
+	background-size: cover;
+  }
+  .speech02::after {
+	background: url(../img/common/speech02_r.svg) no-repeat center center;
+	background-size: cover;
+  }
+
+/*----- scampaign -----*/
+.scampaign {
+	background: url(../img/scampaign/bg.webp) no-repeat center top;
+	background-size: cover;
+	height: 154rem;
+	padding-top: 16rem;
+  }
+  .scampaign_ttl {
+	padding: 0 1rem 0 8rem;
+  }
+  .scampaign_img01 {
+	width: 64.7rem;
+  }
+  .scampaign_content {
+	width: 71rem;
+  }
+  .scampaign_parents {
+	width: 71rem;
+  }
+
+  .scampaign h2.fs36{
+	color: #f85e1e;
+	margin-bottom: 1rem;
+  }
+  
+  .btn_box02 {
+    width: 65.3rem;
+    height: 11.8rem;
+    background: url(../img/scampaign/btn.svg) no-repeat center center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 6rem;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    line-height: 11.6rem;
+    text-shadow: .1rem .1rem .1rem #00000080;
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(61, 40, 4, 0.5);
+    white-space: nowrap;
+}
+
+.btn_box02::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: -18rem;
+    left: 0;
+    width: 3rem;
+    height: 100%;
+    background-color: #ffffff;
+    animation: shiny-btn 3s ease-in-out infinite;
+}

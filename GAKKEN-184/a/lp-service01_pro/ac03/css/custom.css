@@ -1129,3 +1129,24 @@ a.aTagTel span {
     left: 4rem;
     top: -0.6rem;
 }
+
+/*----- scampaign -----*/
+.scampaign {
+	background: url(../img/scampaign/bg.webp) no-repeat center top;
+	background-size: cover;
+	height: 154rem;
+	padding-top: 16rem;
+  }
+  .scampaign_ttl {
+	padding: 0 1rem 0 8rem;
+  }
+  .scampaign_img01 {
+	width: 64.7rem;
+  }
+  .scampaign_content {
+	width: 71rem;
+  }
+  .scampaign_parents {
+	width: 71rem;
+  }
+  

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 601.29 108.66">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        filter: url(#drop-shadow-2);
+        stroke-width: 1.84px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        fill: url(#_名称未設定グラデーション_3);
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#_名称未設定グラデーション_97);
+        filter: url(#drop-shadow-1);
+        stroke-width: 5.52px;
+      }
+    </style>
+    <linearGradient id="_名称未設定グラデーション_97" data-name="名称未設定グラデーション 97" x1="140.54" y1="-105.77" x2="457.98" y2="211.66" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ee8700"/>
+      <stop offset="1" stop-color="#ed9729"/>
+    </linearGradient>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="2.76" dy="2.76"/>
+      <feGaussianBlur result="blur" stdDeviation="0"/>
+      <feFlood flood-color="#000" flood-opacity=".15"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="_名称未設定グラデーション_3" data-name="名称未設定グラデーション 3" x1="299.26" y1="5.52" x2="299.26" y2="100.37" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0a100"/>
+      <stop offset=".5" stop-color="#ffeb4d" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.84" dy="1.84"/>
+      <feGaussianBlur result="blur-2" stdDeviation="0"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_レイヤー_1" data-name="レイヤー 1">
+    <g>
+      <rect class="cls-2" x="2.76" y="2.76" width="593" height="100.37" rx="49.93" ry="49.93"/>
+      <path class="cls-3" d="M52.95,100.37c-26.15,0-47.42-21.27-47.42-47.42S26.8,5.52,52.95,5.52h492.63c26.15,0,47.42,21.27,47.42,47.42s-21.27,47.42-47.42,47.42H52.95Z"/>
+      <polyline class="cls-1" points="558.01 60.31 565.38 52.95 558.01 45.58"/>
+    </g>
+  </g>
+</svg>
